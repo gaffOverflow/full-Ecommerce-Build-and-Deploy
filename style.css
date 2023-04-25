@@ -1131,3 +1131,94 @@ video {
   outline: 2px solid transparent;
   outline-offset: 2px;
 }
+
+@media (min-width: 640px) {
+  .sm\:flex {
+    display: flex;
+  }
+
+  .sm\:grid {
+    display: grid;
+  }
+
+  .sm\:flex-1 {
+    flex: 1 1 0%;
+  }
+
+  .sm\:flex-grow {
+    flex-grow: 1;
+  }
+
+  .sm\:grow {
+    flex-grow: 1;
+  }
+
+  .sm\:basis-1 {
+    flex-basis: 0.25rem;
+  }
+
+  .sm\:basis-3 {
+    flex-basis: 0.75rem;
+  }
+
+  .sm\:basis-10 {
+    flex-basis: 2.5rem;
+  }
+
+  .sm\:basis-40 {
+    flex-basis: 10rem;
+  }
+
+  .sm\:basis-80 {
+    flex-basis: 20rem;
+  }
+
+  .sm\:basis-8 {
+    flex-basis: 2rem;
+  }
+
+  .sm\:basis-9 {
+    flex-basis: 2.25rem;
+  }
+
+  .sm\:basis-96 {
+    flex-basis: 24rem;
+  }
+
+  .sm\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .sm\:flex-row {
+    flex-direction: row;
+  }
+
+  .sm\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .sm\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .sm\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .sm\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .sm\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
