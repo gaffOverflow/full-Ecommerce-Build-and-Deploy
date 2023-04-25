@@ -27,39 +27,39 @@
       }
     </style> -->
   </head>
-  <body class="overflow-x-hidden w-full h-full relative">
+  <body class="overflow-x-hidden w-full h-full relative lg:overflow-auto">
     <div class="">
       <!-- nav bar -->
 
       <nav
-        class="font-spartan flex justify-between items-center bg-background px-6 py-3 shadow-basicShadow fixed top-0 right-0 left-0 duration-500 sm:px-10"
+        class="font-spartan flex justify-between items-center bg-background px-6 py-3 shadow-basicShadow fixed top-0 right-0 left-0 duration-500 sm:px-10 lg:py-4 lg:px-14 xl:px-20 2xl:px-40"
         id="nav"
       >
         <!-- logo -->
 
         <a href="#"
-          ><img src="./img/logo.png" alt="logo image" class="h-6"
+          ><img src="./img/logo.png" alt="logo image" class="h-6 lg:h-8"
         /></a>
 
         <!-- nav lnks -->
 
         <ul
           id="navItem"
-          class="flex flex-col gap-4 fixed top-0 -right-3 w-[0%] min-h-full bg-background pt-10 duration-500 pl-3"
+          class="flex flex-col gap-4 fixed top-0 -right-3 w-[0%] min-h-full bg-background pt-10 duration-500 pl-3 lg:static lg:flex-row lg:pt-0 lg:pl-0 lg:w-auto lg:gap-8"
         >
           <!-- home -->
           <li>
             <a
               href="index.html"
-              class="text-linkHover text-lg font-semibold transition relative hover:text-linkHover after:block after:h-1 after:w-6 after:absolute after:bg-linkHover after:top-5"
-              >home</a
+              class="text-linkHover text-lg font-semibold transition relative hover:text-linkHover after:block after:h-1 after:w-6 after:absolute after:bg-linkHover after:top-5 lg:font-semibold"
+              >Home</a
             >
           </li>
           <!-- shop -->
           <li>
             <a
               href="shop.html"
-              class="text-lg font-semibold transition hover:text-linkHover"
+              class="text-lg font-semibold transition hover:text-linkHover lg:font-semibold"
               >Shop</a
             >
           </li>
@@ -67,7 +67,7 @@
           <li>
             <a
               href="blog.html"
-              class="text-lg font-semibold transition hover:text-linkHover"
+              class="text-lg font-semibold transition hover:text-linkHover lg:font-semibold"
               >Blog</a
             >
           </li>
@@ -75,7 +75,7 @@
           <li>
             <a
               href="about.html"
-              class="text-lg font-semibold transition hover:text-linkHover"
+              class="text-lg font-semibold transition hover:text-linkHover lg:font-semibold"
               >About</a
             >
           </li>
@@ -83,24 +83,25 @@
           <li>
             <a
               href="contact.html"
-              class="text-lg font-semibold transition hover:text-linkHover"
+              class="text-lg font-semibold transition hover:text-linkHover lg:font-semibold"
               >Contact</a
             >
           </li>
           <!-- cart -->
-          <li class="hidden">
-            <a href="cart.html"
+          <li class="grid place-content-center">
+            <a href="cart.html" class="hidden lg:block"
               ><i class="fa-sharp fa-solid fa-cart-shopping"></i
             ></a>
           </li>
+
           <!-- mobile menu close toggle -->
-          <button class="absolute top-4 left-3 text-xl" id="toggleClose">
+          <button class="absolute top-4 left-3 text-xl lg:hidden" id="toggleClose">
             <i class="fa-sharp fa-solid fa-xmark"></i>
           </button>
         </ul>
 
         <!-- mobile cart -->
-        <div class="flex gap-3">
+        <div class="flex gap-3 lg:hidden">
           <a href="cart.html" class="grid place-content-center"
             ><i class="fa-sharp fa-solid fa-cart-shopping"></i
           ></a>
@@ -114,23 +115,23 @@
 
       <section
         style="background: url(./img/hero4.png) center/cover no-repeat"
-        class="flex flex-col justify-center items-baseline px-3 py-40 gap-2 sm:px-10"
+        class="flex flex-col justify-center items-baseline px-3 py-40 gap-2 sm:px-10 lg:px-14 lg:h-screen xl:px-20 2xl:px-40"
       >
         <!-- hero heading -->
-        <h3 class="font-semibold font-spartan sm:text-lg">Trade-in-offer</h3>
+        <h3 class="font-semibold font-spartan sm:text-lg lg:text-2xl">Trade-in-offer</h3>
         <!-- hero title -->
-        <p class="text-3xl font-semibold font-spartan sm:text-4xl">
+        <p class="text-3xl font-semibold font-spartan sm:text-4xl lg:text-5xl">
           Super value deals
           <span class="block text-linkHover">On all products</span>
         </p>
         <!-- hero paragraph -->
-        <p class="font-spartan font-extralight text-xs sm:text-sm">
+        <p class="font-spartan font-extralight text-xs sm:text-sm lg:text-xl">
           Save more with coupopns & up to 70% off!
         </p>
         <!-- hero button -->
         <button
           style="background: url(./img/button.png) center/cover no-repeat"
-          class="w-32 font-spartan font-semibold text-linkHover text-sm py-2 sm:text-base"
+          class="w-36 font-spartan font-semibold text-linkHover text-sm py-2 sm:text-base lg:text-lg lg:w-40"
         >
           Shop Now
         </button>
@@ -138,7 +139,7 @@
 
       <!-- Features section -->
 
-      <section class="grid place-content-center grid-cols-2 gap-3 p-8 sm:grid-cols-3">
+      <section class="grid place-content-center grid-cols-2 gap-3 p-8 sm:grid-cols-3 lg:grid-cols-6 lg:px-14 xl:px-20 2xl:px-40">
         <!-- free Shopping -->
         <div
           class="flex flex-col justify-center items-center gap-3 p-4 shadow-basicShadow"
@@ -209,16 +210,16 @@
 
       <!-- Featured Products -->
 
-      <section class="">
+      <section class="lg:px-14 xl:px-20 2xl:px-40">
         <!-- featured title -->
         <div class="flex flex-col text-center gap-2 py-5">
-          <h1 class="font-spartan text-3xl font-bold">Featured Products</h1>
-          <p class="font-spartan text-sm font-extralight">
+          <h1 class="font-spartan text-3xl font-bold lg:text-4xl">Featured Products</h1>
+          <p class="font-spartan text-sm font-extralight lg:text-xl">
             Summer Collection New Mordern Design
           </p>
         </div>
         <!-- featured products Cards -->
-        <div class="my-5 grid gap-3 p-4 sm:grid-cols-2">
+        <div class="my-5 grid gap-3 p-4 sm:grid-cols-2 lg:grid-cols-4">
           <!-- card 1 -->
           <div
             class="shadow-[0px_1px_3px_1px_rgba(0,0,0,0.2)] hover:shadow-xl p-3 rounded-xl duration-300"
@@ -589,12 +590,12 @@
         style="background: url(./img/banner/b2.jpg) center/cover no-repeat"
       >
         <!-- action header -->
-        <h4 class="font-spartan font-semibold text-lg text-background">
+        <h4 class="font-spartan font-semibold text-lg text-background lg:text-xl">
           Repair Services
         </h4>
         <!-- action title -->
         <p
-          class="font-spartan font-semibold text-2xl text-background text-center"
+          class="font-spartan font-semibold text-2xl text-background text-center lg:text-3xl"
         >
           Up to <span class="text-red-600">70% off</span> - All t-Shirts &
           Accessories
@@ -609,18 +610,18 @@
 
       <!-- new arrivals -->
 
-      <section>
+      <section class="">
         <!-- new arrival header -->
-        <div class="flex flex-col text-center gap-2 pt-5">
-          <h1 class="font-spartan text-3xl font-bold">New Arrivals</h1>
+        <div class="flex flex-col text-center gap-2 pt-5 lg:pt-7">
+          <h1 class="font-spartan text-3xl font-bold lg:text-4xl">New Arrivals</h1>
           <!-- new arrival title -->
-          <p class="font-spartan text-sm font-extralight">
+          <p class="font-spartan text-sm font-extralight lg:text-xl">
             Summer Collection New Mordern Design
           </p>
         </div>
 
         <!-- New Arrivals Product Cards -->
-        <div class="my-5 grid gap-3 p-4 sm:grid-cols-2">
+        <div class="my-5 grid gap-3 p-4 sm:grid-cols-2 lg:grid-cols-4 lg:px-14 xl:px-20 2xl:px-40">
           <!-- card 1 -->
           <div
             class="shadow-[0px_1px_3px_1px_rgba(0,0,0,0.2)] hover:shadow-xl p-3 rounded-xl duration-300"
@@ -986,13 +987,13 @@
 
       <!-- banner -->
 
-      <section class="p-4 flex flex-col gap-4">
+      <section class="p-4 flex flex-col gap-4 lg:px-14 lg:pb-14 xl:px-20 2xl:px-40">
         <!-- Main Banner -->
-        <div class="flex flex-col gap-4">
+        <div class="flex flex-col gap-4 lg:flex-row lg:justify-center lg:items-center">
           <!-- banner 1 -->
           <div
             style="background: url(./img/banner/b17.jpg) center/cover"
-            class="flex flex-col items-baseline font-spartan text-white p-4 gap-1 py-10"
+            class="flex flex-col items-baseline font-spartan text-white p-4 gap-1 py-10 lg:flex-1 lg:py-20"
           >
             <!-- banner header -->
             <h6 class="font-extralight">crazy deals</h6>
@@ -1006,7 +1007,7 @@
           <!-- Banner 2 -->
           <div
             style="background: url(./img/banner/b10.jpg) center/cover"
-            class="flex flex-col items-baseline font-spartan text-white p-4 gap-1 py-10"
+            class="flex flex-col items-baseline font-spartan text-white p-4 gap-1 py-10 lg:flex-1 lg:py-20"
           >
             <!-- banner header -->
             <h6 class="font-extralight">spring/summer</h6>
@@ -1059,16 +1060,16 @@
       <!-- News Letter section -->
 
       <section
-        class="font-spartan bg-blue-950 flex flex-col justify-between items-center py-8 gap-4"
+        class="font-spartan bg-blue-950 flex flex-col justify-between items-center py-8 gap-4 lg:flex-row lg:p-14 xl:px-20 2xl:px-40"
       >
         <!-- articlecontainer -->
-        <article class="text-center">
+        <article class="text-center lg:text-left">
           <!-- article header -->
-          <h3 class="font-semibold text-white text-xl">
+          <h3 class="font-semibold text-white text-xl lg:text-2xl">
             Sign Up for Newslatters
           </h3>
           <!-- article title -->
-          <p class="text-slate-400 text-sm">
+          <p class="text-slate-400 text-sm lg:text-md">
             Get E-mail updates about our latest shop and
             <span class="text-orange-400 font-semibold">special offers</span>
           </p>
@@ -1082,10 +1083,10 @@
             name=""
             id=""
             placeholder="Your email address"
-            class="py-2 px-4 rounded-l-md focus:outline-none"
+            class="py-2 px-4 rounded-l-md focus:outline-none lg:py-4 lg:w-60 lg:px-6"
           />
           <!-- form submit button -->
-          <button class="bg-linkHover text-white p-2 rounded-r-md">
+          <button class="bg-linkHover text-white p-2 rounded-r-md lg:px-6 lg:flex-1">
             Sign Up
           </button>
         </form>
@@ -1094,9 +1095,9 @@
       <!-- footer -->
 
       <footer>
-        <div class="font-spartan p-4 flex flex-col gap-4 sm:flex-row">
+        <div class="font-spartan p-4 flex flex-col gap-4 sm:flex-row lg:justify-center lg:px-14 xl:px-20 2xl:px-40">
           <!-- footer 1 -->
-          <ul class="flex flex-col sm:basis-96">
+          <ul class="flex flex-col sm:basis-96 md:basis-auto lg:basis-[23rem]">
             <!-- icon -->
             <img src="./img/logo.png" alt="logo img" class="w-24 py-1" />
             <!-- contact -->
@@ -1144,7 +1145,7 @@
           </ul>
 
           <!-- footer 2 -->
-          <div class="flex justify-between flex-wrap gap-4">
+          <div class="flex justify-between flex-wrap gap-4 md:flex-nowrap lg:flex-row lg:justify-between lg:flex-1">
             <!-- about -->
             <ul>
               <h5 class="font-semibold py-2">About</h5>
@@ -1211,7 +1212,7 @@
         </div>
 
         <!-- copy right -->
-        <article class="text-center py-3 px-1">
+        <article class="text-center py-3 px-1 md:pb-6">
           <a href="#" class="font-extralight text-sm font-spartan"
             >&copy 2023. @gaffOverflow - HTML TAILWIND Ecommerce Template</a
           >
