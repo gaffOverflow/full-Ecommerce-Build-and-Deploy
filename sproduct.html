@@ -51,17 +51,15 @@
           <li>
             <a
               href="index.html"
-              class="text-linkHover text-lg font-semibold transition relative hover:text-linkHover after:block after:h-1 after:w-6 after:absolute after:bg-linkHover after:top-5 lg:font-semibold"
+              class="text-lg font-semibold transition hover:text-linkHover relative after:block after:h-1 after:w-0 after:absolute after:bg-linkHover after:top-5 hover:after:w-6 after:duration-100 lg:font-semibold"
               >Home</a
             >
-
-            <!-- after:block after:h-1 after:w-0 after:absolute after:bg-linkHover after:top-5 hover:after:w-6 after:duration-500 -->
           </li>
           <!-- shop -->
           <li>
             <a
               href="shop.html"
-              class="text-lg font-semibold transition hover:text-linkHover relative after:block after:h-1 after:w-0 after:absolute after:bg-linkHover after:top-5 hover:after:w-6 after:duration-100 lg:font-semibold"
+              class="text-linkHover text-lg font-semibold transition relative hover:text-linkHover after:block after:h-1 after:w-6 after:absolute after:bg-linkHover after:top-5 lg:font-semibold"
               >Shop</a
             >
           </li>
@@ -118,23 +116,42 @@
 
       <!-- product details  -->
 
-      <section class="grid mt-[60px] lg:grid-cols-2 p-20">
+      <section
+        class="flex flex-col mt-[60px] lg:flex-row md:px-20 md:pt-20 gap-2"
+      >
         <!-- product image -->
-        <div class="flex flex-col gap-1 p-3">
+        <div class="flex flex-col gap-1 p-3 lg:w-[150%]">
           <!-- main image -->
           <div>
-            <img src="./img/products/f1.jpg" alt="product image" />
+            <img src="./img/products/f1.jpg" alt="product image" id="mainImg" />
           </div>
           <!-- other images -->
           <div class="grid grid-cols-4 gap-1">
-            <img src="./img/products/f1.jpg" alt="" />
-            <img src="./img/products/f2.jpg" alt="" />
-            <img src="./img/products/f3.jpg" alt="" />
-            <img src="./img/products/f4.jpg" alt="" />
+            <img
+              src="./img/products/f1.jpg"
+              alt="product images"
+              id="smallImg"
+            />
+            <img
+              src="./img/products/f2.jpg"
+              alt="product images"
+              id="smallImg"
+            />
+            <img
+              src="./img/products/f3.jpg"
+              alt="product images"
+              id="smallImg"
+            />
+            <img
+              src="./img/products/f4.jpg"
+              alt="product images"
+              id="smallImg"
+            />
           </div>
         </div>
 
         <!-- product details -->
+
         <article class="font-spartan p-3 flex flex-col items-start gap-2">
           <!-- product title -->
           <h1 class="font-semibold">home/T-Shirt</h1>
@@ -142,19 +159,33 @@
           <h2 class="text-xl font-bold">Men's Fashion T Shirt</h2>
           <!-- price -->
           <p class="text-2xl font-bold">$139.00</p>
-          <select name="" id="" class=" border rounded-sm border-black pr-7 pl-2 py-1">
+          <select
+            name=""
+            id=""
+            class="border rounded-sm border-black pr-7 pl-2 py-1"
+          >
             <!-- option -->
-            <option value="" >XL</option>
+            <option value="">XL</option>
           </select>
           <!-- product form -->
           <form action="" class="flex gap-2">
             <!-- count input -->
-            <input type="text" name="" id="" value="1" class="border border-black rounded-sm w-8 py-1 px-3 text-black"/>
+            <input
+              type="text"
+              name=""
+              id=""
+              value="1"
+              class="border border-black rounded-sm w-8 py-1 px-3 text-black"
+            />
             <!-- product add to cart -->
-            <button class="text-background bg-linkHover rounded-sm py-1 px-3 hover:opacity-80 duration-200">Add To Cart</button>
+            <button
+              class="text-background bg-linkHover rounded-sm py-1 px-3 hover:opacity-80 duration-200"
+            >
+              Add To Cart
+            </button>
           </form>
           <h3 class="font-bold text-lg mt-3">Product Details</h3>
-          <p>
+          <p class="">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
             soluta non illum veniam odio ipsa totam id, quaerat eius deserunt,
             aperiam numquam explicabo sunt laborum nesciunt nobis dignissimos
@@ -164,9 +195,10 @@
           </p>
         </article>
       </section>
+
       <!-- Featured Products -->
 
-      <section class="lg:px-14 xl:px-20 2xl:px-40">
+      <section class="pb-20 lg:px-14 md:px-20 xl:px-20 2xl:px-40">
         <!-- featured title -->
         <div class="flex flex-col text-center gap-2 py-5">
           <h1 class="font-spartan text-3xl font-bold lg:text-4xl">
