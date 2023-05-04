@@ -646,6 +646,10 @@ video {
   margin-top: 60px;
 }
 
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
 .block {
   display: block;
 }
@@ -676,6 +680,14 @@ video {
 
 .h-\[300px\] {
   height: 300px;
+}
+
+.h-\[30vh\] {
+  height: 30vh;
+}
+
+.h-\[400px\] {
+  height: 400px;
 }
 
 .h-\[40vh\] {
@@ -1054,6 +1066,18 @@ video {
   line-height: 1rem;
 }
 
+.text-\[3vh\] {
+  font-size: 3vh;
+}
+
+.text-\[5vh\] {
+  font-size: 5vh;
+}
+
+.text-\[3vw\] {
+  font-size: 3vw;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -1374,6 +1398,10 @@ video {
     border-radius: 1.5rem;
   }
 
+  .sm\:p-10 {
+    padding: 2.5rem;
+  }
+
   .sm\:px-10 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
@@ -1403,6 +1431,11 @@ video {
     font-size: 0.875rem;
     line-height: 1.25rem;
   }
+
+  .sm\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1410,32 +1443,24 @@ video {
     height: 300px;
   }
 
-  .md\:h-\[55vh\] {
-    height: 55vh;
-  }
-
-  .md\:h-\[50vh\] {
-    height: 50vh;
-  }
-
   .md\:h-\[40vh\] {
     height: 40vh;
-  }
-
-  .md\:h-\[43vh\] {
-    height: 43vh;
   }
 
   .md\:h-\[42vh\] {
     height: 42vh;
   }
 
-  .md\:w-1\/2 {
-    width: 50%;
+  .md\:h-\[45vh\] {
+    height: 45vh;
   }
 
-  .md\:w-3\/5 {
-    width: 60%;
+  .md\:h-\[37vh\] {
+    height: 37vh;
+  }
+
+  .md\:w-1\/2 {
+    width: 50%;
   }
 
   .md\:w-4\/5 {
@@ -1454,10 +1479,6 @@ video {
     flex-wrap: nowrap;
   }
 
-  .md\:rounded-3xl {
-    border-radius: 1.5rem;
-  }
-
   .md\:p-8 {
     padding: 2rem;
   }
@@ -1470,6 +1491,11 @@ video {
   .md\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+
+  .md\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
 
   .md\:pb-6 {
@@ -1502,12 +1528,12 @@ video {
     height: 2rem;
   }
 
-  .lg\:h-\[60vh\] {
-    height: 60vh;
-  }
-
   .lg\:h-screen {
     height: 100vh;
+  }
+
+  .lg\:w-3\/5 {
+    width: 60%;
   }
 
   .lg\:w-40 {
@@ -1524,10 +1550,6 @@ video {
 
   .lg\:w-auto {
     width: auto;
-  }
-
-  .lg\:w-3\/5 {
-    width: 60%;
   }
 
   .lg\:flex-1 {
@@ -1568,6 +1590,10 @@ video {
 
   .lg\:gap-8 {
     gap: 2rem;
+  }
+
+  .lg\:gap-6 {
+    gap: 1.5rem;
   }
 
   .lg\:overflow-auto {
@@ -1685,6 +1711,11 @@ video {
   .xl\:px-44 {
     padding-left: 11rem;
     padding-right: 11rem;
+  }
+
+  .xl\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 }
 

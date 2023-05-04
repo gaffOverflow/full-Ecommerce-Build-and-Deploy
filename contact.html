@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About</title>
+    <title>Contact</title>
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
     <!-- font awesome icon -->
@@ -75,7 +75,7 @@
           <li>
             <a
               href="about.html"
-              class="text-linkHover text-lg font-semibold transition relative hover:text-linkHover after:block after:h-1 after:w-6 after:absolute after:bg-linkHover after:top-5 lg:font-semibold"
+              class="text-lg font-semibold transition hover:text-linkHover relative after:block after:h-1 after:w-0 after:absolute after:bg-linkHover after:top-5 hover:after:w-6 after:duration-100 lg:font-semibold"
               >About</a
             >
           </li>
@@ -83,7 +83,7 @@
           <li>
             <a
               href="contact.html"
-              class="text-lg font-semibold transition hover:text-linkHover relative after:block after:h-1 after:w-0 after:absolute after:bg-linkHover after:top-5 hover:after:w-6 after:duration-100 lg:font-semibold"
+              class="text-linkHover text-lg font-semibold transition relative hover:text-linkHover after:block after:h-1 after:w-6 after:absolute after:bg-linkHover after:top-5 lg:font-semibold"
               >Contact</a
             >
           </li>
@@ -124,72 +124,102 @@
         <p
           class="font-spartan font-semibold text-2xl text-background text-center lg:text-5xl"
         >
-          #KnowUs
+          #let's_talk
         </p>
         <!-- action paragraph -->
         <p
           class="font-spartan text-sm font-extralight text-background lg:text-xl"
         >
-          Learn more about our products and inspiration!
+          LEAVE A MESSAGE. We love to hear from you!
         </p>
       </section>
 
-      <!-- Who We Are -->
+      <!-- Location -->
 
-      <section class="px-4 py-4 sm:px-6 md:p-8 lg:p-20 xl:px-32 2xl:px-52">
+      <section class="px-4 py-4 sm:px-10 md:p-18 lg:p-20 xl:px-32 2xl:px-52">
         <article
-          class="flex flex-col justify-center items-center gap-6  md:flex-row lg:gap-10"
+          class="flex flex-col justify-center items-start gap-6 md:flex-row lg:gap-6 font-spartan"
         >
-          <!-- Who We Are img -->
-          <img
-            src="./img/about/a6.jpg"
-            alt="blog img 1"
-            class="h-[300px] w-full object-cover md:w-1/2 md:h-[42vh]"
-          />
-
-          <!-- Who We Are article  -->
-          <article class="font-spartan md:w-1/2">
-            <!-- article header -->
-            <h1 class="font-bold text-4xl">Who We Are?</h1>
-            <!-- article paragraph -->
-            <p class="font-light lg:text-justify py-5">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam
-              in quod, itaque, sunt animi quas voluptatem ea ipsa exercitationem
-              beatae, quasi eaque! Facilis quos ratione nisi accusamus
-              perferendis. Sed atque tenetur repellat architecto enim ipsum ab
-              explicabo dolores harum, dicta quisquam natus recusandae?
-              Necessitatibus earum, impedit quasi odit itaque ipsum doloremque
-              laborum ipsam excepturi vel, dicta autem voluptatum nihil. Sequi
-              est, quae ex quasi consequatur distinctio error debitis excepturi
-              unde.
+          <!-- Address  -->
+          <article class="font-spartan md:w-1/2 flex flex-col gap-3">
+            <!-- Address header -->
+            <h1 class="font-light text-sm sm:text-base lg:text-xl">GET IN TOUCH</h1>
+            <!-- Address Title -->
+            <p class="font-semibold text-xl sm:text-3xl xl:text-4xl">
+              Visit one of our agency locations or contact us today
             </p>
-            <!-- article link -->
-            <a href="#" class="font-normal underline"
-              >create stunning images with as much as little control as you
-              like, thanks to a choice of Basic and Creative modes</a
-            >
-            <!-- article slide text -->
-            <marquee class="font-spartan bg-slate-200 my-1">
-              create stunning images with as much as little control as you like,
-              thanks to a choice of Basic and Creative modes
-            </marquee>
+            <!-- Address list header -->
+            <h2 class="font-semibold text-sm sm:text-base">Head Office</h2>
+
+            <!-- Address List -->
+            <ul class="flex flex-col gap-3">
+              <!-- Address -->
+              <li class="flex gap-4 font-light text-sm items-center sm:text-lg lg:text-xl">
+                <!-- llst icon -->
+                <i class="fa-sharp fa-regular fa-map"></i>
+                <!-- list paragraph -->
+                <p>85 Abeokuta Street Ebute-meta Lagos, Nigeria.</p>
+              </li>
+
+              <!-- Mail -->
+              <li class="flex gap-4 font-light text-sm items-center sm:text-lg lg:text-xl">
+                <!-- list icon -->
+                <i class="fa-sharp fa-regular fa-envelope"></i>
+                <!-- list paragraph -->
+                <p>contact@example.com</p>
+              </li>
+
+              <!-- Contact -->
+              <li class="flex gap-4 font-light text-sm items-center sm:text-lg lg:text-xl">
+                <!-- list icon -->
+                <i class="fa-sharp fa-solid fa-phone"></i>
+                <!-- list paragraph -->
+                <p>contact@example.com</p>
+              </li>
+
+              <!-- opening hours -->
+              <li class="flex gap-4 font-light text-sm items-center sm:text-lg lg:text-xl">
+                <!-- list icon -->
+                <i class="fa-regular fa-clock"></i>
+                <!-- list paragraph -->
+                <p>Monday to Saturday 9:00am to 16pm</p>
+              </li>
+            </ul>
           </article>
+
+          <!-- Map -->
+          <div class="w-full md:w-1/2">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253682.46310807276!2d3.119143260296829!3d6.548369370201032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b2ae68280c1%3A0xdc9e87a367c3d9cb!2sLagos!5e0!3m2!1sen!2sng!4v1683137465107!5m2!1sen!2sng"
+              width="600"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              class="h-[400px] md:h-[37vh] w-full rounded-3xl"
+            ></iframe>
+          </div>
         </article>
       </section>
 
       <!-- Video - Download Our App -->
 
       <section class="flex flex-col gap-4 justify-center items-center sm:px-6">
-
         <!-- Our App h1 -->
-        <h1 class="text-3xl font- font-bold">Download Our <a href="#" class="text-blue-600 underline">App</a></h1>
+        <h1 class="text-3xl font- font-bold">
+          Download Our <a href="#" class="text-blue-600 underline">App</a>
+        </h1>
 
         <!-- video -->
-        <video autoplay loop src="./img/about/1.mp4" class="sm:rounded-3xl md:w-4/5 lg:w-3/5"></video>
+        <video
+          autoplay
+          loop
+          src="./img/about/1.mp4"
+          class="sm:rounded-3xl md:w-4/5 lg:w-3/5"
+        ></video>
       </section>
 
-
-    <!-- Features section -->
+      <!-- Features section -->
 
       <section
         class="grid place-content-center grid-cols-2 gap-3 p-8 sm:grid-cols-3 lg:grid-cols-6 lg:px-14 xl:px-20 2xl:px-40"
@@ -298,7 +328,7 @@
           </button>
         </form>
       </section>
-    
+
       <!-- footer -->
 
       <footer>
