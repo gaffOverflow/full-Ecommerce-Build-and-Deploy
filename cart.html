@@ -27,12 +27,12 @@
       }
     </style> -->
   </head>
-  <body class="overflow-x-hidden w-full h-full relative lg:overflow-auto">
+  <body class="relative h-full w-full overflow-x-hidden lg:overflow-auto">
     <div class="">
       <!-- nav bar -->
 
       <nav
-        class="font-spartan flex justify-between items-center bg-background px-6 py-3 shadow-basicShadow fixed top-0 right-0 left-0 duration-500 sm:px-10 lg:py-4 lg:px-14 xl:px-20 2xl:px-40 z-40"
+        class="fixed left-0 right-0 top-0 z-40 flex items-center justify-between bg-background px-6 py-3 font-spartan shadow-basicShadow duration-500 sm:px-10 lg:px-14 lg:py-4 xl:px-20 2xl:px-40"
         id="nav"
       >
         <!-- logo -->
@@ -45,13 +45,13 @@
 
         <ul
           id="navItem"
-          class="flex flex-col gap-4 fixed top-0 -right-3 w-[0%] min-h-full bg-background pt-10 duration-500 pl-3 lg:static lg:flex-row lg:pt-0 lg:pl-0 lg:w-auto lg:gap-8"
+          class="fixed -right-3 top-0 flex min-h-full w-[0%] flex-col gap-4 bg-background pl-3 pt-10 duration-500 lg:static lg:w-auto lg:flex-row lg:gap-8 lg:pl-0 lg:pt-0"
         >
           <!-- home -->
           <li>
             <a
               href="index.html"
-              class="text-lg font-semibold transition hover:text-linkHover relative after:block after:h-1 after:w-0 after:absolute after:bg-linkHover after:top-5 hover:after:w-6 after:duration-100 lg:font-semibold"
+              class="relative text-lg font-semibold transition after:absolute after:top-5 after:block after:h-1 after:w-0 after:bg-linkHover after:duration-100 hover:text-linkHover hover:after:w-6 lg:font-semibold"
               >Home</a
             >
           </li>
@@ -59,7 +59,7 @@
           <li>
             <a
               href="shop.html"
-              class="text-lg font-semibold transition hover:text-linkHover relative after:block after:h-1 after:w-0 after:absolute after:bg-linkHover after:top-5 hover:after:w-6 after:duration-100 lg:font-semibold"
+              class="relative text-lg font-semibold transition after:absolute after:top-5 after:block after:h-1 after:w-0 after:bg-linkHover after:duration-100 hover:text-linkHover hover:after:w-6 lg:font-semibold"
               >Shop</a
             >
           </li>
@@ -67,7 +67,7 @@
           <li>
             <a
               href="blog.html"
-              class="text-lg font-semibold transition hover:text-linkHover relative after:block after:h-1 after:w-0 after:absolute after:bg-linkHover after:top-5 hover:after:w-6 after:duration-100 lg:font-semibold"
+              class="relative text-lg font-semibold transition after:absolute after:top-5 after:block after:h-1 after:w-0 after:bg-linkHover after:duration-100 hover:text-linkHover hover:after:w-6 lg:font-semibold"
               >Blog</a
             >
           </li>
@@ -75,14 +75,14 @@
           <li>
             <a
               href="about.html"
-              class="text-lg font-semibold transition hover:text-linkHover relative after:block after:h-1 after:w-0 after:absolute after:bg-linkHover after:top-5 hover:after:w-6 after:duration-100 lg:font-semibold"
+              class="relative text-lg font-semibold transition after:absolute after:top-5 after:block after:h-1 after:w-0 after:bg-linkHover after:duration-100 hover:text-linkHover hover:after:w-6 lg:font-semibold"
               >About</a
             >
           </li>
           <!-- contact -->
           <li>
             <a
-           class="text-lg font-semibold transition hover:text-linkHover relative after:block after:h-1 after:w-0 after:absolute after:bg-linkHover after:top-5 hover:after:w-6 after:duration-100 lg:font-semibold"
+              class="relative text-lg font-semibold transition after:absolute after:top-5 after:block after:h-1 after:w-0 after:bg-linkHover after:duration-100 hover:text-linkHover hover:after:w-6 lg:font-semibold"
               >Contact</a
             >
           </li>
@@ -95,7 +95,7 @@
 
           <!-- mobile menu close toggle -->
           <button
-            class="absolute top-4 left-3 text-xl lg:hidden z-50"
+            class="absolute left-3 top-4 z-50 text-xl lg:hidden"
             id="toggleClose"
           >
             <i class="fa-sharp fa-solid fa-xmark"></i>
@@ -116,12 +116,12 @@
       <!-- call to action -->
 
       <section
-        class="flex flex-col justify-center items-center h-[30vh] md:h-[40vh] gap-3 mt-[50px] lg:mt-[60px]"
+        class="mt-[50px] flex h-[30vh] flex-col items-center justify-center gap-3 md:h-[40vh] lg:mt-[60px]"
         style="background: url(./img/about/banner.png) center top/cover"
       >
         <!-- action title -->
         <p
-          class="font-spartan font-semibold text-2xl text-background text-center lg:text-5xl"
+          class="text-center font-spartan text-2xl font-semibold text-background lg:text-5xl"
         >
           #let's_talk
         </p>
@@ -137,36 +137,36 @@
 
       <footer>
         <div
-          class="font-spartan p-4 flex flex-col gap-4 sm:flex-row lg:justify-center lg:px-14 xl:px-20 2xl:px-40"
+          class="flex flex-col gap-4 p-4 font-spartan sm:flex-row lg:justify-center lg:px-14 xl:px-20 2xl:px-40"
         >
           <!-- footer 1 -->
           <ul class="flex flex-col sm:basis-96 md:basis-auto lg:basis-[23rem]">
             <!-- icon -->
             <img src="./img/logo.png" alt="logo img" class="w-24 py-1" />
             <!-- contact -->
-            <h5 class="font-semibold py-2">Contact</h5>
+            <h5 class="py-2 font-semibold">Contact</h5>
             <!-- address -->
-            <li class="font-semibold text-sm">
+            <li class="text-sm font-semibold">
               Address:
               <span class="font-extralight">
                 85 Abokuta Street Ebute Meta. Lagos</span
               >
             </li>
             <!-- phone -->
-            <li class="font-semibold text-sm">
+            <li class="text-sm font-semibold">
               Phone:
               <span class="font-extralight">
                 +234-708-580-0331/+234-815-110-6939</span
               >
             </li>
             <!-- Working Hours -->
-            <li class="font-semibold text-sm">
+            <li class="text-sm font-semibold">
               Hours:
               <span class="font-extralight"> 10:00 - 18:00 Mon - Sat</span>
             </li>
 
             <!-- link -->
-            <h5 class="font-semibold py-2">Follow Us</h5>
+            <h5 class="py-2 font-semibold">Follow Us</h5>
             <!-- social icons link -->
             <ul class="flex gap-1 text-sm">
               <li>
@@ -189,65 +189,65 @@
 
           <!-- footer 2 -->
           <div
-            class="flex justify-between flex-wrap gap-4 md:flex-nowrap lg:flex-row lg:justify-between lg:flex-1"
+            class="flex flex-wrap justify-between gap-4 md:flex-nowrap lg:flex-1 lg:flex-row lg:justify-between"
           >
             <!-- about -->
             <ul>
-              <h5 class="font-semibold py-2">About</h5>
-              <li class="font-extralight text-sm"><a href="#">About Us</a></li>
-              <li class="font-extralight text-sm">
+              <h5 class="py-2 font-semibold">About</h5>
+              <li class="text-sm font-extralight"><a href="#">About Us</a></li>
+              <li class="text-sm font-extralight">
                 <a href="#">Delivery Information</a>
               </li>
-              <li class="font-extralight text-sm">
+              <li class="text-sm font-extralight">
                 <a href="#">Privacy Policy</a>
               </li>
-              <li class="font-extralight text-sm">
+              <li class="text-sm font-extralight">
                 <a href="#">Terms & Condition</a>
               </li>
-              <li class="font-extralight text-sm">
+              <li class="text-sm font-extralight">
                 <a href="#">Contact Us</a>
               </li>
             </ul>
 
             <!-- my account -->
             <ul>
-              <h5 class="font-semibold py-2">My Account</h5>
-              <li class="font-extralight text-sm"><a href="#">Sign in</a></li>
-              <li class="font-extralight text-sm"><a href="#">View Cart</a></li>
-              <li class="font-extralight text-sm">
+              <h5 class="py-2 font-semibold">My Account</h5>
+              <li class="text-sm font-extralight"><a href="#">Sign in</a></li>
+              <li class="text-sm font-extralight"><a href="#">View Cart</a></li>
+              <li class="text-sm font-extralight">
                 <a href="#">My Wishlist</a>
               </li>
-              <li class="font-extralight text-sm">
+              <li class="text-sm font-extralight">
                 <a href="#">Track My Order</a>
               </li>
-              <li class="font-extralight text-sm"><a href="#">Help</a></li>
+              <li class="text-sm font-extralight"><a href="#">Help</a></li>
             </ul>
 
             <!-- Install App -->
             <ul>
               <!-- Install App header -->
-              <h5 class="font-semibold py-2">Install App</h5>
+              <h5 class="py-2 font-semibold">Install App</h5>
               <!-- List item -->
-              <li class="font-extralight text-sm">
+              <li class="text-sm font-extralight">
                 <a href="#">From App Store or Google Play</a>
               </li>
               <!-- Payment images -->
-              <li class="flex flex-col justify-start items-baseline gap-4 py-4">
+              <li class="flex flex-col items-baseline justify-start gap-4 py-4">
                 <!-- App Store -->
                 <img
                   src="./img/pay/app.jpg"
                   alt="App store icon"
-                  class="border border-linkHover rounded-md"
+                  class="rounded-md border border-linkHover"
                 />
                 <!-- Play Store -->
                 <img
                   src="./img/pay/play.jpg"
                   alt="Play Store Icon"
-                  class="border border-linkHover rounded-md"
+                  class="rounded-md border border-linkHover"
                 />
               </li>
               <!-- Secure payment  -->
-              <li class="font-extralight text-sm">
+              <li class="text-sm font-extralight">
                 <a href="#">Secure Payment Gateways</a>
               </li>
               <!-- Payment Card options -->
@@ -263,8 +263,8 @@
         </div>
 
         <!-- copy right -->
-        <article class="text-center py-3 px-1 md:pb-6">
-          <a href="#" class="font-extralight text-sm font-spartan"
+        <article class="px-1 py-3 text-center md:pb-6">
+          <a href="#" class="font-spartan text-sm font-extralight"
             >&copy 2023. @gaffOverflow - HTML TAILWIND Ecommerce Template</a
           >
         </article>
