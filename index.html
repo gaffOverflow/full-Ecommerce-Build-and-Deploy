@@ -27,12 +27,12 @@
       }
     </style> -->
   </head>
-  <body class="overflow-x-hidden w-full h-full relative lg:overflow-auto">
+  <body class="relative h-full w-full overflow-x-hidden lg:overflow-auto">
     <div class="">
       <!-- nav bar -->
 
       <nav
-        class="font-spartan flex justify-between items-center bg-background px-6 py-3 shadow-basicShadow fixed top-0 right-0 left-0 duration-500 sm:px-10 lg:py-4 lg:px-14 xl:px-20 2xl:px-40"
+        class="fixed left-0 right-0 top-0 flex items-center justify-between bg-background px-6 py-3 font-spartan shadow-basicShadow duration-500 sm:px-10 lg:px-14 lg:py-4 xl:px-20 2xl:px-40"
         id="nav"
       >
         <!-- logo -->
@@ -45,23 +45,23 @@
 
         <ul
           id="navItem"
-          class="flex flex-col gap-4 fixed top-0 -right-3 w-[0%] min-h-full bg-background pt-10 duration-500 pl-3 lg:static lg:flex-row lg:pt-0 lg:pl-0 lg:w-auto lg:gap-8"
+          class="fixed -right-3 top-0 flex min-h-full w-[0%] flex-col gap-4 bg-background pl-3 pt-10 duration-500 lg:static lg:w-auto lg:flex-row lg:gap-8 lg:pl-0 lg:pt-0"
         >
           <!-- home -->
           <li>
             <a
               href="index.html"
-              class="text-linkHover text-lg font-semibold transition relative hover:text-linkHover after:block after:h-1 after:w-6 after:absolute after:bg-linkHover after:top-5 lg:font-semibold"
+              class="relative text-lg font-semibold text-linkHover transition after:absolute after:top-5 after:block after:h-1 after:w-6 after:bg-linkHover hover:text-linkHover lg:font-semibold"
               >Home</a
             >
 
-          <!-- after:block after:h-1 after:w-0 after:absolute after:bg-linkHover after:top-5 hover:after:w-6 after:duration-500 -->
+            <!-- after:block after:h-1 after:w-0 after:absolute after:bg-linkHover after:top-5 hover:after:w-6 after:duration-500 -->
           </li>
           <!-- shop -->
           <li>
             <a
               href="shop.html"
-              class="text-lg font-semibold transition hover:text-linkHover relative after:block after:h-1 after:w-0 after:absolute after:bg-linkHover after:top-5 hover:after:w-6 after:duration-100 lg:font-semibold"
+              class="relative text-lg font-semibold transition after:absolute after:top-5 after:block after:h-1 after:w-0 after:bg-linkHover after:duration-100 hover:text-linkHover hover:after:w-6 lg:font-semibold"
               >Shop</a
             >
           </li>
@@ -69,7 +69,7 @@
           <li>
             <a
               href="blog.html"
-              class="text-lg font-semibold transition hover:text-linkHover relative after:block after:h-1 after:w-0 after:absolute after:bg-linkHover after:top-5 hover:after:w-6 after:duration-100 lg:font-semibold"
+              class="relative text-lg font-semibold transition after:absolute after:top-5 after:block after:h-1 after:w-0 after:bg-linkHover after:duration-100 hover:text-linkHover hover:after:w-6 lg:font-semibold"
               >Blog</a
             >
           </li>
@@ -77,7 +77,7 @@
           <li>
             <a
               href="about.html"
-              class="text-lg font-semibold transition hover:text-linkHover relative after:block after:h-1 after:w-0 after:absolute after:bg-linkHover after:top-5 hover:after:w-6 after:duration-100 lg:font-semibold"
+              class="relative text-lg font-semibold transition after:absolute after:top-5 after:block after:h-1 after:w-0 after:bg-linkHover after:duration-100 hover:text-linkHover hover:after:w-6 lg:font-semibold"
               >About</a
             >
           </li>
@@ -85,7 +85,7 @@
           <li>
             <a
               href="contact.html"
-              class="text-lg font-semibold transition hover:text-linkHover relative after:block after:h-1 after:w-0 after:absolute after:bg-linkHover after:top-5 hover:after:w-6 after:duration-100 lg:font-semibold"
+              class="relative text-lg font-semibold transition after:absolute after:top-5 after:block after:h-1 after:w-0 after:bg-linkHover after:duration-100 hover:text-linkHover hover:after:w-6 lg:font-semibold"
               >Contact</a
             >
           </li>
@@ -98,7 +98,7 @@
 
           <!-- mobile menu close toggle -->
           <button
-            class="absolute top-4 left-3 text-xl lg:hidden"
+            class="absolute left-3 top-4 text-xl lg:hidden"
             id="toggleClose"
           >
             <i class="fa-sharp fa-solid fa-xmark"></i>
@@ -120,25 +120,25 @@
 
       <section
         style="background: url(./img/hero4.png) center/cover no-repeat"
-        class="flex flex-col justify-center items-baseline px-3 py-40 gap-2 sm:px-10 lg:px-14 lg:h-screen xl:px-20 2xl:px-40"
+        class="flex flex-col items-baseline justify-center gap-2 px-3 py-40 sm:px-10 lg:h-screen lg:px-14 xl:px-20 2xl:px-40"
       >
         <!-- hero heading -->
-        <h3 class="font-semibold font-spartan sm:text-lg lg:text-2xl">
+        <h3 class="font-spartan font-semibold sm:text-lg lg:text-2xl">
           Trade-in-offer
         </h3>
         <!-- hero title -->
-        <p class="text-3xl font-semibold font-spartan sm:text-4xl lg:text-5xl">
+        <p class="font-spartan text-3xl font-semibold sm:text-4xl lg:text-5xl">
           Super value deals
           <span class="block text-linkHover">On all products</span>
         </p>
         <!-- hero paragraph -->
-        <p class="font-spartan font-extralight text-xs sm:text-sm lg:text-xl">
+        <p class="font-spartan text-xs font-extralight sm:text-sm lg:text-xl">
           Save more with coupopns & up to 70% off!
         </p>
         <!-- hero button -->
         <button
           style="background: url(./img/button.png) center/cover no-repeat"
-          class="w-36 font-spartan font-semibold text-linkHover text-sm py-2 sm:text-base lg:text-lg lg:w-40"
+          class="w-36 py-2 font-spartan text-sm font-semibold text-linkHover sm:text-base lg:w-40 lg:text-lg"
         >
           Shop Now
         </button>
@@ -147,70 +147,70 @@
       <!-- Features section -->
 
       <section
-        class="grid place-content-center grid-cols-2 gap-3 p-8 sm:grid-cols-3 lg:grid-cols-6 lg:px-14 xl:px-20 2xl:px-40"
+        class="grid grid-cols-2 place-content-center gap-3 p-8 sm:grid-cols-3 lg:grid-cols-6 lg:px-14 xl:px-20 2xl:px-40"
       >
         <!-- free Shopping -->
         <div
-          class="flex flex-col justify-center items-center gap-3 p-4 shadow-basicShadow"
+          class="flex flex-col items-center justify-center gap-3 p-4 shadow-basicShadow"
         >
           <img src="./img/features/f1.png" alt="free shopping png" />
           <p
-            class="font-spartan text-xs font-semibold text-linkHover bg-orange-200 px-2 py-1 rounded-sm"
+            class="rounded-sm bg-orange-200 px-2 py-1 font-spartan text-xs font-semibold text-linkHover"
           >
             Free Shopping
           </p>
         </div>
         <!-- Online Order -->
         <div
-          class="flex flex-col justify-center items-center gap-3 p-4 shadow-basicShadow"
+          class="flex flex-col items-center justify-center gap-3 p-4 shadow-basicShadow"
         >
           <img src="./img/features/f2.png" alt="Online Order png" />
           <p
-            class="font-spartan text-xs font-semibold text-linkHover bg-green-200 px-2 py-1 rounded-sm"
+            class="rounded-sm bg-green-200 px-2 py-1 font-spartan text-xs font-semibold text-linkHover"
           >
             Online Order
           </p>
         </div>
         <!-- Save Money -->
         <div
-          class="flex flex-col justify-center items-center gap-3 p-4 shadow-basicShadow"
+          class="flex flex-col items-center justify-center gap-3 p-4 shadow-basicShadow"
         >
           <img src="./img/features/f3.png" alt="Save Money png" />
           <p
-            class="font-spartan text-xs font-semibold text-linkHover bg-blue-200 px-2 py-1 rounded-sm"
+            class="rounded-sm bg-blue-200 px-2 py-1 font-spartan text-xs font-semibold text-linkHover"
           >
             Save Money
           </p>
         </div>
         <!-- Promotions -->
         <div
-          class="flex flex-col justify-center items-center gap-3 p-4 shadow-basicShadow"
+          class="flex flex-col items-center justify-center gap-3 p-4 shadow-basicShadow"
         >
           <img src="./img/features/f4.png" alt="Promotions png" />
           <p
-            class="font-spartan text-xs font-semibold text-linkHover bg-purple-200 px-2 py-1 rounded-sm"
+            class="rounded-sm bg-purple-200 px-2 py-1 font-spartan text-xs font-semibold text-linkHover"
           >
             Promotions
           </p>
         </div>
         <!-- Happy Sell -->
         <div
-          class="flex flex-col justify-center items-center gap-3 p-4 shadow-basicShadow"
+          class="flex flex-col items-center justify-center gap-3 p-4 shadow-basicShadow"
         >
           <img src="./img/features/f5.png" alt="Happy Sell png" />
           <p
-            class="font-spartan text-xs font-semibold text-linkHover bg-red-200 px-2 py-1 rounded-sm"
+            class="rounded-sm bg-red-200 px-2 py-1 font-spartan text-xs font-semibold text-linkHover"
           >
             Happy Sell
           </p>
         </div>
         <!-- 24/7 Support -->
         <div
-          class="flex flex-col justify-center items-center gap-3 p-4 shadow-basicShadow"
+          class="flex flex-col items-center justify-center gap-3 p-4 shadow-basicShadow"
         >
           <img src="./img/features/f6.png" alt="24/7 Support png" />
           <p
-            class="font-spartan text-xs font-semibold text-linkHover bg-amber-100 px-2 py-1 rounded-sm"
+            class="rounded-sm bg-amber-100 px-2 py-1 font-spartan text-xs font-semibold text-linkHover"
           >
             24/7 Support
           </p>
@@ -221,7 +221,7 @@
 
       <section class="lg:px-14 xl:px-20 2xl:px-40">
         <!-- featured title -->
-        <div class="flex flex-col text-center gap-2 py-5">
+        <div class="flex flex-col gap-2 py-5 text-center">
           <h1 class="font-spartan text-3xl font-bold lg:text-4xl">
             Featured Products
           </h1>
@@ -233,7 +233,7 @@
         <div class="my-5 grid gap-3 p-4 sm:grid-cols-2 lg:grid-cols-4">
           <!-- card 1 -->
           <div
-            class="shadow-[0px_1px_3px_1px_rgba(0,0,0,0.2)] hover:shadow-xl p-3 rounded-xl duration-300"
+            class="rounded-xl p-3 shadow-[0px_1px_3px_1px_rgba(0,0,0,0.2)] duration-300 hover:shadow-xl"
           >
             <!-- card img -->
             <img
@@ -242,43 +242,43 @@
               class="rounded-xl"
             />
             <!-- brand name -->
-            <p class="text-sm font-extralight font-spartan">adidas</p>
+            <p class="font-spartan text-sm font-extralight">adidas</p>
             <!-- product name -->
             <p class="font-spartan font-semibold">Cartoon Astronaut T-Shirts</p>
             <!-- star rating icons -->
             <div>
               <i
-                class="fa-sharp fa-solid fa-star text-yellow-500 p-0 text-sm mx-0"
+                class="fa-sharp fa-solid fa-star mx-0 p-0 text-sm text-yellow-500"
               ></i>
               <i
-                class="fa-sharp fa-solid fa-star text-yellow-500 p-0 text-sm mx-0"
+                class="fa-sharp fa-solid fa-star mx-0 p-0 text-sm text-yellow-500"
               ></i>
               <i
-                class="fa-sharp fa-solid fa-star text-yellow-500 p-0 text-sm mx-0"
+                class="fa-sharp fa-solid fa-star mx-0 p-0 text-sm text-yellow-500"
               ></i>
               <i
-                class="fa-sharp fa-solid fa-star text-yellow-500 p-0 text-sm mx-0"
+                class="fa-sharp fa-solid fa-star mx-0 p-0 text-sm text-yellow-500"
               ></i>
               <i
-                class="fa-sharp fa-solid fa-star text-yellow-500 p-0 text-sm mx-0"
+                class="fa-sharp fa-solid fa-star mx-0 p-0 text-sm text-yellow-500"
               ></i>
             </div>
             <!-- price & cart -->
-            <div class="flex justify-between items-center">
+            <div class="flex items-center justify-between">
               <!-- price -->
               <p class="font-spartan font-semibold text-linkHover">$78</p>
               <!-- cart button -->
               <button class="">
                 <iconify-icon
                   icon="material-symbols:add-shopping-cart-sharp"
-                  class="grid place-content-center h-8 w-8 rounded-full bg-background shadow-md text-linkHover"
+                  class="grid h-8 w-8 place-content-center rounded-full bg-background text-linkHover shadow-md"
                 ></iconify-icon>
               </button>
             </div>
           </div>
           <!-- card 2 -->
           <div
-            class="shadow-[0px_1px_3px_1px_rgba(0,0,0,0.2)] hover:shadow-xl p-3 rounded-xl duration-300"
+            class="rounded-xl p-3 shadow-[0px_1px_3px_1px_rgba(0,0,0,0.2)] duration-300 hover:shadow-xl"
           >
             <!-- card img -->
             <img
@@ -287,43 +287,43 @@
               class="rounded-xl"
             />
             <!-- brand name -->
-            <p class="text-sm font-extralight font-spartan">adidas</p>
+            <p class="font-spartan text-sm font-extralight">adidas</p>
             <!-- product name -->
             <p class="font-spartan font-semibold">Cartoon Astronaut T-Shirts</p>
             <!-- star rating icons -->
             <div>
               <i
-                class="fa-sharp fa-solid fa-star text-yellow-500 p-0 text-sm mx-0"
+                class="fa-sharp fa-solid fa-star mx-0 p-0 text-sm text-yellow-500"
               ></i>
               <i
-                class="fa-sharp fa-solid fa-star text-yellow-500 p-0 text-sm mx-0"
+                class="fa-sharp fa-solid fa-star mx-0 p-0 text-sm text-yellow-500"
               ></i>
               <i
-                class="fa-sharp fa-solid fa-star text-yellow-500 p-0 text-sm mx-0"
+                class="fa-sharp fa-solid fa-star mx-0 p-0 text-sm text-yellow-500"
               ></i>
               <i
-                class="fa-sharp fa-solid fa-star text-yellow-500 p-0 text-sm mx-0"
+                class="fa-sharp fa-solid fa-star mx-0 p-0 text-sm text-yellow-500"
               ></i>
               <i
-                class="fa-sharp fa-solid fa-star text-yellow-500 p-0 text-sm mx-0"
+                class="fa-sharp fa-solid fa-star mx-0 p-0 text-sm text-yellow-500"
               ></i>
             </div>
             <!-- price & cart -->
-            <div class="flex justify-between items-center">
+            <div class="flex items-center justify-between">
               <!-- price -->
               <p class="font-spartan font-semibold text-linkHover">$78</p>
               <!-- cart button -->
               <button class="">
                 <iconify-icon
                   icon="material-symbols:add-shopping-cart-sharp"
-                  class="grid place-content-center h-8 w-8 rounded-full bg-background shadow-md text-linkHover"
+                  class="grid h-8 w-8 place-content-center rounded-full bg-background text-linkHover shadow-md"
                 ></iconify-icon>
               </button>
             </div>
           </div>
           <!-- card 3 -->
           <div
-            class="shadow-[0px_1px_3px_1px_rgba(0,0,0,0.2)] hover:shadow-xl p-3 rounded-xl duration-300"
+            class="rounded-xl p-3 shadow-[0px_1px_3px_1px_rgba(0,0,0,0.2)] duration-300 hover:shadow-xl"
           >
             <!-- card img -->
             <img
@@ -332,43 +332,43 @@
               class="rounded-xl"
             />
             <!-- brand name -->
-            <p class="text-sm font-extralight font-spartan">adidas</p>
+            <p class="font-spartan text-sm font-extralight">adidas</p>
             <!-- product name -->
             <p class="font-spartan font-semibold">Cartoon Astronaut T-Shirts</p>
             <!-- star rating icons -->
             <div>
               <i
-                class="fa-sharp fa-solid fa-star text-yellow-500 p-0 text-sm mx-0"
+                class="fa-sharp fa-solid fa-star mx-0 p-0 text-sm text-yellow-500"
               ></i>
               <i
-                class="fa-sharp fa-solid fa-star text-yellow-500 p-0 text-sm mx-0"
+                class="fa-sharp fa-solid fa-star mx-0 p-0 text-sm text-yellow-500"
               ></i>
               <i
-                class="fa-sharp fa-solid fa-star text-yellow-500 p-0 text-sm mx-0"
+                class="fa-sharp fa-solid fa-star mx-0 p-0 text-sm text-yellow-500"
               ></i>
               <i
-                class="fa-sharp fa-solid fa-star text-yellow-500 p-0 text-sm mx-0"
+                class="fa-sharp fa-solid fa-star mx-0 p-0 text-sm text-yellow-500"
               ></i>
               <i
-                class="fa-sharp fa-solid fa-star text-yellow-500 p-0 text-sm mx-0"
+                class="fa-sharp fa-solid fa-star mx-0 p-0 text-sm text-yellow-500"
               ></i>
             </div>
             <!-- price & cart -->
-            <div class="flex justify-between items-center">
+            <div class="flex items-center justify-between">
               <!-- price -->
               <p class="font-spartan font-semibold text-linkHover">$78</p>
               <!-- cart button -->
               <button class="">
                 <iconify-icon
                   icon="material-symbols:add-shopping-cart-sharp"
-                  class="grid place-content-center h-8 w-8 rounded-full bg-background shadow-md text-linkHover"
+                  class="grid h-8 w-8 place-content-center rounded-full bg-background text-linkHover shadow-md"
                 ></iconify-icon>
               </button>
             </div>
           </div>
           <!-- card 4 -->
           <div
-            class="shadow-[0px_1px_3px_1px_rgba(0,0,0,0.2)] hover:shadow-xl p-3 rounded-xl duration-300"
+            class="rounded-xl p-3 shadow-[0px_1px_3px_1px_rgba(0,0,0,0.2)] duration-300 hover:shadow-xl"
           >
             <!-- card img -->
             <img
@@ -377,43 +377,43 @@
               class="rounded-xl"
             />
             <!-- brand name -->
-            <p class="text-sm font-extralight font-spartan">adidas</p>
+            <p class="font-spartan text-sm font-extralight">adidas</p>
             <!-- product name -->
             <p class="font-spartan font-semibold">Cartoon Astronaut T-Shirts</p>
             <!-- star rating icons -->
             <div>
               <i
-                class="fa-sharp fa-solid fa-star text-yellow-500 p-0 text-sm mx-0"
+                class="fa-sharp fa-solid fa-star mx-0 p-0 text-sm text-yellow-500"
               ></i>
               <i
-                class="fa-sharp fa-solid fa-star text-yellow-500 p-0 text-sm mx-0"
+                class="fa-sharp fa-solid fa-star mx-0 p-0 text-sm text-yellow-500"
               ></i>
               <i
-                class="fa-sharp fa-solid fa-star text-yellow-500 p-0 text-sm mx-0"
+                class="fa-sharp fa-solid fa-star mx-0 p-0 text-sm text-yellow-500"
               ></i>
               <i
-                class="fa-sharp fa-solid fa-star text-yellow-500 p-0 text-sm mx-0"
+                class="fa-sharp fa-solid fa-star mx-0 p-0 text-sm text-yellow-500"
               ></i>
               <i
-                class="fa-sharp fa-solid fa-star text-yellow-500 p-0 text-sm mx-0"
+                class="fa-sharp fa-solid fa-star mx-0 p-0 text-sm text-yellow-500"
               ></i>
             </div>
             <!-- price & cart -->
-            <div class="flex justify-between items-center">
+            <div class="flex items-center justify-between">
               <!-- price -->
               <p class="font-spartan font-semibold text-linkHover">$78</p>
               <!-- cart button -->
               <button class="">
                 <iconify-icon
                   icon="material-symbols:add-shopping-cart-sharp"
-                  class="grid place-content-center h-8 w-8 rounded-full bg-background shadow-md text-linkHover"
+                  class="grid h-8 w-8 place-content-center rounded-full bg-background text-linkHover shadow-md"
                 ></iconify-icon>
               </button>
             </div>
           </div>
           <!-- card 5 -->
           <div
-            class="shadow-[0px_1px_3px_1px_rgba(0,0,0,0.2)] hover:shadow-xl p-3 rounded-xl duration-300"
+            class="rounded-xl p-3 shadow-[0px_1px_3px_1px_rgba(0,0,0,0.2)] duration-300 hover:shadow-xl"
           >
             <!-- card img -->
             <img
@@ -422,43 +422,43 @@
               class="rounded-xl"
             />
             <!-- brand name -->
-            <p class="text-sm font-extralight font-spartan">adidas</p>
+            <p class="font-spartan text-sm font-extralight">adidas</p>
             <!-- product name -->
             <p class="font-spartan font-semibold">Cartoon Astronaut T-Shirts</p>
             <!-- star rating icons -->
             <div>
               <i
-                class="fa-sharp fa-solid fa-star text-yellow-500 p-0 text-sm mx-0"
+                class="fa-sharp fa-solid fa-star mx-0 p-0 text-sm text-yellow-500"
               ></i>
               <i
-                class="fa-sharp fa-solid fa-star text-yellow-500 p-0 text-sm mx-0"
+                class="fa-sharp fa-solid fa-star mx-0 p-0 text-sm text-yellow-500"
               ></i>
               <i
-                class="fa-sharp fa-solid fa-star text-yellow-500 p-0 text-sm mx-0"
+                class="fa-sharp fa-solid fa-star mx-0 p-0 text-sm text-yellow-500"
               ></i>
               <i
-                class="fa-sharp fa-solid fa-star text-yellow-500 p-0 text-sm mx-0"
+                class="fa-sharp fa-solid fa-star mx-0 p-0 text-sm text-yellow-500"
               ></i>
               <i
-                class="fa-sharp fa-solid fa-star text-yellow-500 p-0 text-sm mx-0"
+                class="fa-sharp fa-solid fa-star mx-0 p-0 text-sm text-yellow-500"
               ></i>
             </div>
             <!-- price & cart -->
-            <div class="flex justify-between items-center">
+            <div class="flex items-center justify-between">
               <!-- price -->
               <p class="font-spartan font-semibold text-linkHover">$78</p>
               <!-- cart button -->
               <button class="">
                 <iconify-icon
                   icon="material-symbols:add-shopping-cart-sharp"
-                  class="grid place-content-center h-8 w-8 rounded-full bg-background shadow-md text-linkHover"
+                  class="grid h-8 w-8 place-content-center rounded-full bg-background text-linkHover shadow-md"
                 ></iconify-icon>
               </button>
             </div>
           </div>
           <!-- card 6 -->
           <div
-            class="shadow-[0px_1px_3px_1px_rgba(0,0,0,0.2)] hover:shadow-xl p-3 rounded-xl duration-300"
+            class="rounded-xl p-3 shadow-[0px_1px_3px_1px_rgba(0,0,0,0.2)] duration-300 hover:shadow-xl"
           >
             <!-- card img -->
             <img
@@ -467,43 +467,43 @@
               class="rounded-xl"
             />
             <!-- brand name -->
-            <p class="text-sm font-extralight font-spartan">adidas</p>
+            <p class="font-spartan text-sm font-extralight">adidas</p>
             <!-- product name -->
             <p class="font-spartan font-semibold">Cartoon Astronaut T-Shirts</p>
             <!-- star rating icons -->
             <div>
               <i
-                class="fa-sharp fa-solid fa-star text-yellow-500 p-0 text-sm mx-0"
+                class="fa-sharp fa-solid fa-star mx-0 p-0 text-sm text-yellow-500"
               ></i>
               <i
-                class="fa-sharp fa-solid fa-star text-yellow-500 p-0 text-sm mx-0"
+                class="fa-sharp fa-solid fa-star mx-0 p-0 text-sm text-yellow-500"
               ></i>
               <i
-                class="fa-sharp fa-solid fa-star text-yellow-500 p-0 text-sm mx-0"
+                class="fa-sharp fa-solid fa-star mx-0 p-0 text-sm text-yellow-500"
               ></i>
               <i
-                class="fa-sharp fa-solid fa-star text-yellow-500 p-0 text-sm mx-0"
+                class="fa-sharp fa-solid fa-star mx-0 p-0 text-sm text-yellow-500"
               ></i>
               <i
-                class="fa-sharp fa-solid fa-star text-yellow-500 p-0 text-sm mx-0"
+                class="fa-sharp fa-solid fa-star mx-0 p-0 text-sm text-yellow-500"
               ></i>
             </div>
             <!-- price & cart -->
-            <div class="flex justify-between items-center">
+            <div class="flex items-center justify-between">
               <!-- price -->
               <p class="font-spartan font-semibold text-linkHover">$78</p>
               <!-- cart button -->
               <button class="">
                 <iconify-icon
                   icon="material-symbols:add-shopping-cart-sharp"
-                  class="grid place-content-center h-8 w-8 rounded-full bg-background shadow-md text-linkHover"
+                  class="grid h-8 w-8 place-content-center rounded-full bg-background text-linkHover shadow-md"
                 ></iconify-icon>
               </button>
             </div>
           </div>
           <!-- card 7 -->
           <div
-            class="shadow-[0px_1px_3px_1px_rgba(0,0,0,0.2)] hover:shadow-xl p-3 rounded-xl duration-300"
+            class="rounded-xl p-3 shadow-[0px_1px_3px_1px_rgba(0,0,0,0.2)] duration-300 hover:shadow-xl"
           >
             <!-- card img -->
             <img
@@ -512,43 +512,43 @@
               class="rounded-xl"
             />
             <!-- brand name -->
-            <p class="text-sm font-extralight font-spartan">adidas</p>
+            <p class="font-spartan text-sm font-extralight">adidas</p>
             <!-- product name -->
             <p class="font-spartan font-semibold">Cartoon Astronaut T-Shirts</p>
             <!-- star rating icons -->
             <div>
               <i
-                class="fa-sharp fa-solid fa-star text-yellow-500 p-0 text-sm mx-0"
+                class="fa-sharp fa-solid fa-star mx-0 p-0 text-sm text-yellow-500"
               ></i>
               <i
-                class="fa-sharp fa-solid fa-star text-yellow-500 p-0 text-sm mx-0"
+                class="fa-sharp fa-solid fa-star mx-0 p-0 text-sm text-yellow-500"
               ></i>
               <i
-                class="fa-sharp fa-solid fa-star text-yellow-500 p-0 text-sm mx-0"
+                class="fa-sharp fa-solid fa-star mx-0 p-0 text-sm text-yellow-500"
               ></i>
               <i
-                class="fa-sharp fa-solid fa-star text-yellow-500 p-0 text-sm mx-0"
+                class="fa-sharp fa-solid fa-star mx-0 p-0 text-sm text-yellow-500"
               ></i>
               <i
-                class="fa-sharp fa-solid fa-star text-yellow-500 p-0 text-sm mx-0"
+                class="fa-sharp fa-solid fa-star mx-0 p-0 text-sm text-yellow-500"
               ></i>
             </div>
             <!-- price & cart -->
-            <div class="flex justify-between items-center">
+            <div class="flex items-center justify-between">
               <!-- price -->
               <p class="font-spartan font-semibold text-linkHover">$78</p>
               <!-- cart button -->
               <button class="">
                 <iconify-icon
                   icon="material-symbols:add-shopping-cart-sharp"
-                  class="grid place-content-center h-8 w-8 rounded-full bg-background shadow-md text-linkHover"
+                  class="grid h-8 w-8 place-content-center rounded-full bg-background text-linkHover shadow-md"
                 ></iconify-icon>
               </button>
             </div>
           </div>
           <!-- card 8 -->
           <div
-            class="shadow-[0px_1px_3px_1px_rgba(0,0,0,0.2)] hover:shadow-xl p-3 rounded-xl duration-300"
+            class="rounded-xl p-3 shadow-[0px_1px_3px_1px_rgba(0,0,0,0.2)] duration-300 hover:shadow-xl"
           >
             <!-- card img -->
             <img
@@ -557,36 +557,36 @@
               class="rounded-xl"
             />
             <!-- brand name -->
-            <p class="text-sm font-extralight font-spartan">adidas</p>
+            <p class="font-spartan text-sm font-extralight">adidas</p>
             <!-- product name -->
             <p class="font-spartan font-semibold">Cartoon Astronaut T-Shirts</p>
             <!-- star rating icons -->
             <div>
               <i
-                class="fa-sharp fa-solid fa-star text-yellow-500 p-0 text-sm mx-0"
+                class="fa-sharp fa-solid fa-star mx-0 p-0 text-sm text-yellow-500"
               ></i>
               <i
-                class="fa-sharp fa-solid fa-star text-yellow-500 p-0 text-sm mx-0"
+                class="fa-sharp fa-solid fa-star mx-0 p-0 text-sm text-yellow-500"
               ></i>
               <i
-                class="fa-sharp fa-solid fa-star text-yellow-500 p-0 text-sm mx-0"
+                class="fa-sharp fa-solid fa-star mx-0 p-0 text-sm text-yellow-500"
               ></i>
               <i
-                class="fa-sharp fa-solid fa-star text-yellow-500 p-0 text-sm mx-0"
+                class="fa-sharp fa-solid fa-star mx-0 p-0 text-sm text-yellow-500"
               ></i>
               <i
-                class="fa-sharp fa-solid fa-star text-yellow-500 p-0 text-sm mx-0"
+                class="fa-sharp fa-solid fa-star mx-0 p-0 text-sm text-yellow-500"
               ></i>
             </div>
             <!-- price & cart -->
-            <div class="flex justify-between items-center">
+            <div class="flex items-center justify-between">
               <!-- price -->
               <p class="font-spartan font-semibold text-linkHover">$78</p>
               <!-- cart button -->
               <button class="">
                 <iconify-icon
                   icon="material-symbols:add-shopping-cart-sharp"
-                  class="grid place-content-center h-8 w-8 rounded-full bg-background shadow-md text-linkHover"
+                  class="grid h-8 w-8 place-content-center rounded-full bg-background text-linkHover shadow-md"
                 ></iconify-icon>
               </button>
             </div>
@@ -597,25 +597,25 @@
       <!-- call to action -->
 
       <section
-        class="flex flex-col justify-center items-center py-10 gap-3"
+        class="flex flex-col items-center justify-center gap-3 py-10"
         style="background: url(./img/banner/b2.jpg) center/cover no-repeat"
       >
         <!-- action header -->
         <h4
-          class="font-spartan font-semibold text-lg text-background lg:text-xl"
+          class="font-spartan text-lg font-semibold text-background lg:text-xl"
         >
           Repair Services
         </h4>
         <!-- action title -->
         <p
-          class="font-spartan font-semibold text-2xl text-background text-center lg:text-3xl"
+          class="text-center font-spartan text-2xl font-semibold text-background lg:text-3xl"
         >
           Up to <span class="text-red-600">70% off</span> - All t-Shirts &
           Accessories
         </p>
         <!-- action button -->
         <button
-          class="bg-background py-2 px-4 rounded-md font-spartan font-semibold hover:bg-linkHover hover:text-background duration-200"
+          class="rounded-md bg-background px-4 py-2 font-spartan font-semibold duration-200 hover:bg-linkHover hover:text-background"
         >
           Explore More
         </button>
@@ -625,7 +625,7 @@
 
       <section class="">
         <!-- new arrival header -->
-        <div class="flex flex-col text-center gap-2 pt-5 lg:pt-7">
+        <div class="flex flex-col gap-2 pt-5 text-center lg:pt-7">
           <h1 class="font-spartan text-3xl font-bold lg:text-4xl">
             New Arrivals
           </h1>
@@ -641,7 +641,7 @@
         >
           <!-- card 1 -->
           <div
-            class="shadow-[0px_1px_3px_1px_rgba(0,0,0,0.2)] hover:shadow-xl p-3 rounded-xl duration-300"
+            class="rounded-xl p-3 shadow-[0px_1px_3px_1px_rgba(0,0,0,0.2)] duration-300 hover:shadow-xl"
           >
             <!-- card img -->
             <img
@@ -650,43 +650,43 @@
               class="rounded-xl"
             />
             <!-- brand name -->
-            <p class="text-sm font-extralight font-spartan">adidas</p>
+            <p class="font-spartan text-sm font-extralight">adidas</p>
             <!-- product name -->
             <p class="font-spartan font-semibold">Cartoon Astronaut T-Shirts</p>
             <!-- star rating icons -->
             <div>
               <i
-                class="fa-sharp fa-solid fa-star text-yellow-500 p-0 text-sm mx-0"
+                class="fa-sharp fa-solid fa-star mx-0 p-0 text-sm text-yellow-500"
               ></i>
               <i
-                class="fa-sharp fa-solid fa-star text-yellow-500 p-0 text-sm mx-0"
+                class="fa-sharp fa-solid fa-star mx-0 p-0 text-sm text-yellow-500"
               ></i>
               <i
-                class="fa-sharp fa-solid fa-star text-yellow-500 p-0 text-sm mx-0"
+                class="fa-sharp fa-solid fa-star mx-0 p-0 text-sm text-yellow-500"
               ></i>
               <i
-                class="fa-sharp fa-solid fa-star text-yellow-500 p-0 text-sm mx-0"
+                class="fa-sharp fa-solid fa-star mx-0 p-0 text-sm text-yellow-500"
               ></i>
               <i
-                class="fa-sharp fa-solid fa-star text-yellow-500 p-0 text-sm mx-0"
+                class="fa-sharp fa-solid fa-star mx-0 p-0 text-sm text-yellow-500"
               ></i>
             </div>
             <!-- price & cart -->
-            <div class="flex justify-between items-center">
+            <div class="flex items-center justify-between">
               <!-- price -->
               <p class="font-spartan font-semibold text-linkHover">$78</p>
               <!-- cart button -->
               <button class="">
                 <iconify-icon
                   icon="material-symbols:add-shopping-cart-sharp"
-                  class="grid place-content-center h-8 w-8 rounded-full bg-background shadow-md text-linkHover"
+                  class="grid h-8 w-8 place-content-center rounded-full bg-background text-linkHover shadow-md"
                 ></iconify-icon>
               </button>
             </div>
           </div>
           <!-- card 2 -->
           <div
-            class="shadow-[0px_1px_3px_1px_rgba(0,0,0,0.2)] hover:shadow-xl p-3 rounded-xl duration-300"
+            class="rounded-xl p-3 shadow-[0px_1px_3px_1px_rgba(0,0,0,0.2)] duration-300 hover:shadow-xl"
           >
             <!-- card img -->
             <img
@@ -695,43 +695,43 @@
               class="rounded-xl"
             />
             <!-- brand name -->
-            <p class="text-sm font-extralight font-spartan">adidas</p>
+            <p class="font-spartan text-sm font-extralight">adidas</p>
             <!-- product name -->
             <p class="font-spartan font-semibold">Cartoon Astronaut T-Shirts</p>
             <!-- star rating icons -->
             <div>
               <i
-                class="fa-sharp fa-solid fa-star text-yellow-500 p-0 text-sm mx-0"
+                class="fa-sharp fa-solid fa-star mx-0 p-0 text-sm text-yellow-500"
               ></i>
               <i
-                class="fa-sharp fa-solid fa-star text-yellow-500 p-0 text-sm mx-0"
+                class="fa-sharp fa-solid fa-star mx-0 p-0 text-sm text-yellow-500"
               ></i>
               <i
-                class="fa-sharp fa-solid fa-star text-yellow-500 p-0 text-sm mx-0"
+                class="fa-sharp fa-solid fa-star mx-0 p-0 text-sm text-yellow-500"
               ></i>
               <i
-                class="fa-sharp fa-solid fa-star text-yellow-500 p-0 text-sm mx-0"
+                class="fa-sharp fa-solid fa-star mx-0 p-0 text-sm text-yellow-500"
               ></i>
               <i
-                class="fa-sharp fa-solid fa-star text-yellow-500 p-0 text-sm mx-0"
+                class="fa-sharp fa-solid fa-star mx-0 p-0 text-sm text-yellow-500"
               ></i>
             </div>
             <!-- price & cart -->
-            <div class="flex justify-between items-center">
+            <div class="flex items-center justify-between">
               <!-- price -->
               <p class="font-spartan font-semibold text-linkHover">$78</p>
               <!-- cart button -->
               <button class="">
                 <iconify-icon
                   icon="material-symbols:add-shopping-cart-sharp"
-                  class="grid place-content-center h-8 w-8 rounded-full bg-background shadow-md text-linkHover"
+                  class="grid h-8 w-8 place-content-center rounded-full bg-background text-linkHover shadow-md"
                 ></iconify-icon>
               </button>
             </div>
           </div>
           <!-- card 3 -->
           <div
-            class="shadow-[0px_1px_3px_1px_rgba(0,0,0,0.2)] hover:shadow-xl p-3 rounded-xl duration-300"
+            class="rounded-xl p-3 shadow-[0px_1px_3px_1px_rgba(0,0,0,0.2)] duration-300 hover:shadow-xl"
           >
             <!-- card img -->
             <img
@@ -740,43 +740,43 @@
               class="rounded-xl"
             />
             <!-- brand name -->
-            <p class="text-sm font-extralight font-spartan">adidas</p>
+            <p class="font-spartan text-sm font-extralight">adidas</p>
             <!-- product name -->
             <p class="font-spartan font-semibold">Cartoon Astronaut T-Shirts</p>
             <!-- star rating icons -->
             <div>
               <i
-                class="fa-sharp fa-solid fa-star text-yellow-500 p-0 text-sm mx-0"
+                class="fa-sharp fa-solid fa-star mx-0 p-0 text-sm text-yellow-500"
               ></i>
               <i
-                class="fa-sharp fa-solid fa-star text-yellow-500 p-0 text-sm mx-0"
+                class="fa-sharp fa-solid fa-star mx-0 p-0 text-sm text-yellow-500"
               ></i>
               <i
-                class="fa-sharp fa-solid fa-star text-yellow-500 p-0 text-sm mx-0"
+                class="fa-sharp fa-solid fa-star mx-0 p-0 text-sm text-yellow-500"
               ></i>
               <i
-                class="fa-sharp fa-solid fa-star text-yellow-500 p-0 text-sm mx-0"
+                class="fa-sharp fa-solid fa-star mx-0 p-0 text-sm text-yellow-500"
               ></i>
               <i
-                class="fa-sharp fa-solid fa-star text-yellow-500 p-0 text-sm mx-0"
+                class="fa-sharp fa-solid fa-star mx-0 p-0 text-sm text-yellow-500"
               ></i>
             </div>
             <!-- price & cart -->
-            <div class="flex justify-between items-center">
+            <div class="flex items-center justify-between">
               <!-- price -->
               <p class="font-spartan font-semibold text-linkHover">$78</p>
               <!-- cart button -->
               <button class="">
                 <iconify-icon
                   icon="material-symbols:add-shopping-cart-sharp"
-                  class="grid place-content-center h-8 w-8 rounded-full bg-background shadow-md text-linkHover"
+                  class="grid h-8 w-8 place-content-center rounded-full bg-background text-linkHover shadow-md"
                 ></iconify-icon>
               </button>
             </div>
           </div>
           <!-- card 4 -->
           <div
-            class="shadow-[0px_1px_3px_1px_rgba(0,0,0,0.2)] hover:shadow-xl p-3 rounded-xl duration-300"
+            class="rounded-xl p-3 shadow-[0px_1px_3px_1px_rgba(0,0,0,0.2)] duration-300 hover:shadow-xl"
           >
             <!-- card img -->
             <img
@@ -785,43 +785,43 @@
               class="rounded-xl"
             />
             <!-- brand name -->
-            <p class="text-sm font-extralight font-spartan">adidas</p>
+            <p class="font-spartan text-sm font-extralight">adidas</p>
             <!-- product name -->
             <p class="font-spartan font-semibold">Cartoon Astronaut T-Shirts</p>
             <!-- star rating icons -->
             <div>
               <i
-                class="fa-sharp fa-solid fa-star text-yellow-500 p-0 text-sm mx-0"
+                class="fa-sharp fa-solid fa-star mx-0 p-0 text-sm text-yellow-500"
               ></i>
               <i
-                class="fa-sharp fa-solid fa-star text-yellow-500 p-0 text-sm mx-0"
+                class="fa-sharp fa-solid fa-star mx-0 p-0 text-sm text-yellow-500"
               ></i>
               <i
-                class="fa-sharp fa-solid fa-star text-yellow-500 p-0 text-sm mx-0"
+                class="fa-sharp fa-solid fa-star mx-0 p-0 text-sm text-yellow-500"
               ></i>
               <i
-                class="fa-sharp fa-solid fa-star text-yellow-500 p-0 text-sm mx-0"
+                class="fa-sharp fa-solid fa-star mx-0 p-0 text-sm text-yellow-500"
               ></i>
               <i
-                class="fa-sharp fa-solid fa-star text-yellow-500 p-0 text-sm mx-0"
+                class="fa-sharp fa-solid fa-star mx-0 p-0 text-sm text-yellow-500"
               ></i>
             </div>
             <!-- price & cart -->
-            <div class="flex justify-between items-center">
+            <div class="flex items-center justify-between">
               <!-- price -->
               <p class="font-spartan font-semibold text-linkHover">$78</p>
               <!-- cart button -->
               <button class="">
                 <iconify-icon
                   icon="material-symbols:add-shopping-cart-sharp"
-                  class="grid place-content-center h-8 w-8 rounded-full bg-background shadow-md text-linkHover"
+                  class="grid h-8 w-8 place-content-center rounded-full bg-background text-linkHover shadow-md"
                 ></iconify-icon>
               </button>
             </div>
           </div>
           <!-- card 5 -->
           <div
-            class="shadow-[0px_1px_3px_1px_rgba(0,0,0,0.2)] hover:shadow-xl p-3 rounded-xl duration-300"
+            class="rounded-xl p-3 shadow-[0px_1px_3px_1px_rgba(0,0,0,0.2)] duration-300 hover:shadow-xl"
           >
             <!-- card img -->
             <img
@@ -830,43 +830,43 @@
               class="rounded-xl"
             />
             <!-- brand name -->
-            <p class="text-sm font-extralight font-spartan">adidas</p>
+            <p class="font-spartan text-sm font-extralight">adidas</p>
             <!-- product name -->
             <p class="font-spartan font-semibold">Cartoon Astronaut T-Shirts</p>
             <!-- star rating icons -->
             <div>
               <i
-                class="fa-sharp fa-solid fa-star text-yellow-500 p-0 text-sm mx-0"
+                class="fa-sharp fa-solid fa-star mx-0 p-0 text-sm text-yellow-500"
               ></i>
               <i
-                class="fa-sharp fa-solid fa-star text-yellow-500 p-0 text-sm mx-0"
+                class="fa-sharp fa-solid fa-star mx-0 p-0 text-sm text-yellow-500"
               ></i>
               <i
-                class="fa-sharp fa-solid fa-star text-yellow-500 p-0 text-sm mx-0"
+                class="fa-sharp fa-solid fa-star mx-0 p-0 text-sm text-yellow-500"
               ></i>
               <i
-                class="fa-sharp fa-solid fa-star text-yellow-500 p-0 text-sm mx-0"
+                class="fa-sharp fa-solid fa-star mx-0 p-0 text-sm text-yellow-500"
               ></i>
               <i
-                class="fa-sharp fa-solid fa-star text-yellow-500 p-0 text-sm mx-0"
+                class="fa-sharp fa-solid fa-star mx-0 p-0 text-sm text-yellow-500"
               ></i>
             </div>
             <!-- price & cart -->
-            <div class="flex justify-between items-center">
+            <div class="flex items-center justify-between">
               <!-- price -->
               <p class="font-spartan font-semibold text-linkHover">$78</p>
               <!-- cart button -->
               <button class="">
                 <iconify-icon
                   icon="material-symbols:add-shopping-cart-sharp"
-                  class="grid place-content-center h-8 w-8 rounded-full bg-background shadow-md text-linkHover"
+                  class="grid h-8 w-8 place-content-center rounded-full bg-background text-linkHover shadow-md"
                 ></iconify-icon>
               </button>
             </div>
           </div>
           <!-- card 6 -->
           <div
-            class="shadow-[0px_1px_3px_1px_rgba(0,0,0,0.2)] hover:shadow-xl p-3 rounded-xl duration-300"
+            class="rounded-xl p-3 shadow-[0px_1px_3px_1px_rgba(0,0,0,0.2)] duration-300 hover:shadow-xl"
           >
             <!-- card img -->
             <img
@@ -875,43 +875,43 @@
               class="rounded-xl"
             />
             <!-- brand name -->
-            <p class="text-sm font-extralight font-spartan">adidas</p>
+            <p class="font-spartan text-sm font-extralight">adidas</p>
             <!-- product name -->
             <p class="font-spartan font-semibold">Cartoon Astronaut T-Shirts</p>
             <!-- star rating icons -->
             <div>
               <i
-                class="fa-sharp fa-solid fa-star text-yellow-500 p-0 text-sm mx-0"
+                class="fa-sharp fa-solid fa-star mx-0 p-0 text-sm text-yellow-500"
               ></i>
               <i
-                class="fa-sharp fa-solid fa-star text-yellow-500 p-0 text-sm mx-0"
+                class="fa-sharp fa-solid fa-star mx-0 p-0 text-sm text-yellow-500"
               ></i>
               <i
-                class="fa-sharp fa-solid fa-star text-yellow-500 p-0 text-sm mx-0"
+                class="fa-sharp fa-solid fa-star mx-0 p-0 text-sm text-yellow-500"
               ></i>
               <i
-                class="fa-sharp fa-solid fa-star text-yellow-500 p-0 text-sm mx-0"
+                class="fa-sharp fa-solid fa-star mx-0 p-0 text-sm text-yellow-500"
               ></i>
               <i
-                class="fa-sharp fa-solid fa-star text-yellow-500 p-0 text-sm mx-0"
+                class="fa-sharp fa-solid fa-star mx-0 p-0 text-sm text-yellow-500"
               ></i>
             </div>
             <!-- price & cart -->
-            <div class="flex justify-between items-center">
+            <div class="flex items-center justify-between">
               <!-- price -->
               <p class="font-spartan font-semibold text-linkHover">$78</p>
               <!-- cart button -->
               <button class="">
                 <iconify-icon
                   icon="material-symbols:add-shopping-cart-sharp"
-                  class="grid place-content-center h-8 w-8 rounded-full bg-background shadow-md text-linkHover"
+                  class="grid h-8 w-8 place-content-center rounded-full bg-background text-linkHover shadow-md"
                 ></iconify-icon>
               </button>
             </div>
           </div>
           <!-- card 7 -->
           <div
-            class="shadow-[0px_1px_3px_1px_rgba(0,0,0,0.2)] hover:shadow-xl p-3 rounded-xl duration-300"
+            class="rounded-xl p-3 shadow-[0px_1px_3px_1px_rgba(0,0,0,0.2)] duration-300 hover:shadow-xl"
           >
             <!-- card img -->
             <img
@@ -920,43 +920,43 @@
               class="rounded-xl"
             />
             <!-- brand name -->
-            <p class="text-sm font-extralight font-spartan">adidas</p>
+            <p class="font-spartan text-sm font-extralight">adidas</p>
             <!-- product name -->
             <p class="font-spartan font-semibold">Cartoon Astronaut T-Shirts</p>
             <!-- star rating icons -->
             <div>
               <i
-                class="fa-sharp fa-solid fa-star text-yellow-500 p-0 text-sm mx-0"
+                class="fa-sharp fa-solid fa-star mx-0 p-0 text-sm text-yellow-500"
               ></i>
               <i
-                class="fa-sharp fa-solid fa-star text-yellow-500 p-0 text-sm mx-0"
+                class="fa-sharp fa-solid fa-star mx-0 p-0 text-sm text-yellow-500"
               ></i>
               <i
-                class="fa-sharp fa-solid fa-star text-yellow-500 p-0 text-sm mx-0"
+                class="fa-sharp fa-solid fa-star mx-0 p-0 text-sm text-yellow-500"
               ></i>
               <i
-                class="fa-sharp fa-solid fa-star text-yellow-500 p-0 text-sm mx-0"
+                class="fa-sharp fa-solid fa-star mx-0 p-0 text-sm text-yellow-500"
               ></i>
               <i
-                class="fa-sharp fa-solid fa-star text-yellow-500 p-0 text-sm mx-0"
+                class="fa-sharp fa-solid fa-star mx-0 p-0 text-sm text-yellow-500"
               ></i>
             </div>
             <!-- price & cart -->
-            <div class="flex justify-between items-center">
+            <div class="flex items-center justify-between">
               <!-- price -->
               <p class="font-spartan font-semibold text-linkHover">$78</p>
               <!-- cart button -->
               <button class="">
                 <iconify-icon
                   icon="material-symbols:add-shopping-cart-sharp"
-                  class="grid place-content-center h-8 w-8 rounded-full bg-background shadow-md text-linkHover"
+                  class="grid h-8 w-8 place-content-center rounded-full bg-background text-linkHover shadow-md"
                 ></iconify-icon>
               </button>
             </div>
           </div>
           <!-- card 8 -->
           <div
-            class="shadow-[0px_1px_3px_1px_rgba(0,0,0,0.2)] hover:shadow-xl p-3 rounded-xl duration-300"
+            class="rounded-xl p-3 shadow-[0px_1px_3px_1px_rgba(0,0,0,0.2)] duration-300 hover:shadow-xl"
           >
             <!-- card img -->
             <img
@@ -965,36 +965,36 @@
               class="rounded-xl"
             />
             <!-- brand name -->
-            <p class="text-sm font-extralight font-spartan">adidas</p>
+            <p class="font-spartan text-sm font-extralight">adidas</p>
             <!-- product name -->
             <p class="font-spartan font-semibold">Cartoon Astronaut T-Shirts</p>
             <!-- star rating icons -->
             <div>
               <i
-                class="fa-sharp fa-solid fa-star text-yellow-500 p-0 text-sm mx-0"
+                class="fa-sharp fa-solid fa-star mx-0 p-0 text-sm text-yellow-500"
               ></i>
               <i
-                class="fa-sharp fa-solid fa-star text-yellow-500 p-0 text-sm mx-0"
+                class="fa-sharp fa-solid fa-star mx-0 p-0 text-sm text-yellow-500"
               ></i>
               <i
-                class="fa-sharp fa-solid fa-star text-yellow-500 p-0 text-sm mx-0"
+                class="fa-sharp fa-solid fa-star mx-0 p-0 text-sm text-yellow-500"
               ></i>
               <i
-                class="fa-sharp fa-solid fa-star text-yellow-500 p-0 text-sm mx-0"
+                class="fa-sharp fa-solid fa-star mx-0 p-0 text-sm text-yellow-500"
               ></i>
               <i
-                class="fa-sharp fa-solid fa-star text-yellow-500 p-0 text-sm mx-0"
+                class="fa-sharp fa-solid fa-star mx-0 p-0 text-sm text-yellow-500"
               ></i>
             </div>
             <!-- price & cart -->
-            <div class="flex justify-between items-center">
+            <div class="flex items-center justify-between">
               <!-- price -->
               <p class="font-spartan font-semibold text-linkHover">$78</p>
               <!-- cart button -->
               <button class="">
                 <iconify-icon
                   icon="material-symbols:add-shopping-cart-sharp"
-                  class="grid place-content-center h-8 w-8 rounded-full bg-background shadow-md text-linkHover"
+                  class="grid h-8 w-8 place-content-center rounded-full bg-background text-linkHover shadow-md"
                 ></iconify-icon>
               </button>
             </div>
@@ -1005,16 +1005,16 @@
       <!-- banner -->
 
       <section
-        class="p-4 flex flex-col gap-4 lg:px-14 lg:pb-14 xl:px-20 2xl:px-40"
+        class="flex flex-col gap-4 p-4 lg:px-14 lg:pb-14 xl:px-20 2xl:px-40"
       >
         <!-- Main Banner -->
         <div
-          class="flex flex-col gap-4 lg:flex-row lg:justify-center lg:items-center"
+          class="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-center"
         >
           <!-- banner 1 -->
           <div
             style="background: url(./img/banner/b17.jpg) center/cover"
-            class="flex flex-col items-baseline font-spartan text-white p-4 gap-1 py-10 lg:flex-1 lg:py-20"
+            class="flex flex-col items-baseline gap-1 p-4 py-10 font-spartan text-white lg:flex-1 lg:py-20"
           >
             <!-- banner header -->
             <h6 class="font-extralight">crazy deals</h6>
@@ -1028,7 +1028,7 @@
           <!-- Banner 2 -->
           <div
             style="background: url(./img/banner/b10.jpg) center/cover"
-            class="flex flex-col items-baseline font-spartan text-white p-4 gap-1 py-10 lg:flex-1 lg:py-20"
+            class="flex flex-col items-baseline gap-1 p-4 py-10 font-spartan text-white lg:flex-1 lg:py-20"
           >
             <!-- banner header -->
             <h6 class="font-extralight">spring/summer</h6>
@@ -1046,34 +1046,34 @@
           <!-- banner 1 -->
           <div
             style="background: url(./img/banner/b7.jpg) center/cover"
-            class="flex flex-col items-baseline font-spartan text-white p-4 gap-1 py-10 sm:flex-1"
+            class="flex flex-col items-baseline gap-1 p-4 py-10 font-spartan text-white sm:flex-1"
           >
             <!-- banner header -->
             <h3 class="text-xl font-bold">SEASON SALE</h3>
             <!-- banner title -->
-            <p class="text-red-600 font-semibold">Winter Collection 60% off</p>
+            <p class="font-semibold text-red-600">Winter Collection 60% off</p>
           </div>
 
           <!-- Banner 2 -->
           <div
             style="background: url(./img/banner/b4.jpg) center/cover"
-            class="flex flex-col items-baseline font-spartan text-white p-4 gap-1 py-10 sm:flex-1"
+            class="flex flex-col items-baseline gap-1 p-4 py-10 font-spartan text-white sm:flex-1"
           >
             <!-- banner header -->
             <h3 class="text-xl font-bold">NEW FOOTWEAR COLLECTION</h3>
             <!-- banner title -->
-            <p class="text-red-600 font-semibold">Spring/Summer 2023</p>
+            <p class="font-semibold text-red-600">Spring/Summer 2023</p>
           </div>
 
           <!-- banner 3 -->
           <div
             style="background: url(./img/banner/b18.jpg) center/cover"
-            class="flex flex-col items-baseline font-spartan text-white p-4 gap-1 py-10 sm:flex-1"
+            class="flex flex-col items-baseline gap-1 p-4 py-10 font-spartan text-white sm:flex-1"
           >
             <!-- banner header -->
             <h3 class="text-xl font-bold">T-SHIRTS</h3>
             <!-- banner title -->
-            <p class="text-red-600 font-semibold">New Trendy</p>
+            <p class="font-semibold text-red-600">New Trendy</p>
           </div>
         </div>
       </section>
@@ -1081,18 +1081,18 @@
       <!-- News Letter section -->
 
       <section
-        class="font-spartan bg-blue-950 flex flex-col justify-between items-center py-8 gap-4 lg:flex-row lg:p-14 xl:px-20 2xl:px-40"
+        class="flex flex-col items-center justify-between gap-4 bg-blue-950 py-8 font-spartan lg:flex-row lg:p-14 xl:px-20 2xl:px-40"
       >
         <!-- articlecontainer -->
         <article class="text-center lg:text-left">
           <!-- article header -->
-          <h3 class="font-semibold text-white text-xl lg:text-2xl">
+          <h3 class="text-xl font-semibold text-white lg:text-2xl">
             Sign Up for Newslatters
           </h3>
           <!-- article title -->
-          <p class="text-slate-400 text-sm lg:text-md">
+          <p class="lg:text-md text-sm text-slate-400">
             Get E-mail updates about our latest shop and
-            <span class="text-orange-400 font-semibold">special offers</span>
+            <span class="font-semibold text-orange-400">special offers</span>
           </p>
         </article>
 
@@ -1104,11 +1104,11 @@
             name=""
             id=""
             placeholder="Your email address"
-            class="py-2 px-4 rounded-l-md focus:outline-none lg:py-3 lg:w-60 lg:px-6 text-linkHover"
+            class="rounded-l-md px-4 py-2 text-linkHover focus:outline-none lg:w-60 lg:px-6 lg:py-3"
           />
           <!-- form submit button -->
           <button
-            class="bg-linkHover text-white p-2 rounded-r-md lg:px-6 lg:flex-1 hover:opacity-70 duration-300"
+            class="rounded-r-md bg-linkHover p-2 text-white duration-300 hover:opacity-70 lg:flex-1 lg:px-6"
           >
             Sign Up
           </button>
@@ -1119,36 +1119,36 @@
 
       <footer>
         <div
-          class="font-spartan p-4 flex flex-col gap-4 sm:flex-row lg:justify-center lg:px-14 xl:px-20 2xl:px-40"
+          class="flex flex-col gap-4 p-4 font-spartan sm:flex-row lg:justify-center lg:px-14 xl:px-20 2xl:px-40"
         >
           <!-- footer 1 -->
           <ul class="flex flex-col sm:basis-96 md:basis-auto lg:basis-[23rem]">
             <!-- icon -->
             <img src="./img/logo.png" alt="logo img" class="w-24 py-1" />
             <!-- contact -->
-            <h5 class="font-semibold py-2">Contact</h5>
+            <h5 class="py-2 font-semibold">Contact</h5>
             <!-- address -->
-            <li class="font-semibold text-sm">
+            <li class="text-sm font-semibold">
               Address:
               <span class="font-extralight">
                 85 Abokuta Street Ebute Meta. Lagos</span
               >
             </li>
             <!-- phone -->
-            <li class="font-semibold text-sm">
+            <li class="text-sm font-semibold">
               Phone:
               <span class="font-extralight">
                 +234-708-580-0331/+234-815-110-6939</span
               >
             </li>
             <!-- Working Hours -->
-            <li class="font-semibold text-sm">
+            <li class="text-sm font-semibold">
               Hours:
               <span class="font-extralight"> 10:00 - 18:00 Mon - Sat</span>
             </li>
 
             <!-- link -->
-            <h5 class="font-semibold py-2">Follow Us</h5>
+            <h5 class="py-2 font-semibold">Follow Us</h5>
             <!-- social icons link -->
             <ul class="flex gap-1 text-sm">
               <li>
@@ -1171,65 +1171,65 @@
 
           <!-- footer 2 -->
           <div
-            class="flex justify-between flex-wrap gap-4 md:flex-nowrap lg:flex-row lg:justify-between lg:flex-1"
+            class="flex flex-wrap justify-between gap-4 md:flex-nowrap lg:flex-1 lg:flex-row lg:justify-between"
           >
             <!-- about -->
             <ul>
-              <h5 class="font-semibold py-2">About</h5>
-              <li class="font-extralight text-sm"><a href="#">About Us</a></li>
-              <li class="font-extralight text-sm">
+              <h5 class="py-2 font-semibold">About</h5>
+              <li class="text-sm font-extralight"><a href="#">About Us</a></li>
+              <li class="text-sm font-extralight">
                 <a href="#">Delivery Information</a>
               </li>
-              <li class="font-extralight text-sm">
+              <li class="text-sm font-extralight">
                 <a href="#">Privacy Policy</a>
               </li>
-              <li class="font-extralight text-sm">
+              <li class="text-sm font-extralight">
                 <a href="#">Terms & Condition</a>
               </li>
-              <li class="font-extralight text-sm">
+              <li class="text-sm font-extralight">
                 <a href="#">Contact Us</a>
               </li>
             </ul>
 
             <!-- my account -->
             <ul>
-              <h5 class="font-semibold py-2">My Account</h5>
-              <li class="font-extralight text-sm"><a href="#">Sign in</a></li>
-              <li class="font-extralight text-sm"><a href="#">View Cart</a></li>
-              <li class="font-extralight text-sm">
+              <h5 class="py-2 font-semibold">My Account</h5>
+              <li class="text-sm font-extralight"><a href="#">Sign in</a></li>
+              <li class="text-sm font-extralight"><a href="#">View Cart</a></li>
+              <li class="text-sm font-extralight">
                 <a href="#">My Wishlist</a>
               </li>
-              <li class="font-extralight text-sm">
+              <li class="text-sm font-extralight">
                 <a href="#">Track My Order</a>
               </li>
-              <li class="font-extralight text-sm"><a href="#">Help</a></li>
+              <li class="text-sm font-extralight"><a href="#">Help</a></li>
             </ul>
 
             <!-- Install App -->
             <ul>
               <!-- Install App header -->
-              <h5 class="font-semibold py-2">Install App</h5>
+              <h5 class="py-2 font-semibold">Install App</h5>
               <!-- List item -->
-              <li class="font-extralight text-sm">
+              <li class="text-sm font-extralight">
                 <a href="#">From App Store or Google Play</a>
               </li>
               <!-- Payment images -->
-              <li class="flex flex-col justify-start items-baseline gap-4 py-4">
+              <li class="flex flex-col items-baseline justify-start gap-4 py-4">
                 <!-- App Store -->
                 <img
                   src="./img/pay/app.jpg"
                   alt="App store icon"
-                  class="border border-linkHover rounded-md"
+                  class="rounded-md border border-linkHover"
                 />
                 <!-- Play Store -->
                 <img
                   src="./img/pay/play.jpg"
                   alt="Play Store Icon"
-                  class="border border-linkHover rounded-md"
+                  class="rounded-md border border-linkHover"
                 />
               </li>
               <!-- Secure payment  -->
-              <li class="font-extralight text-sm">
+              <li class="text-sm font-extralight">
                 <a href="#">Secure Payment Gateways</a>
               </li>
               <!-- Payment Card options -->
@@ -1245,8 +1245,8 @@
         </div>
 
         <!-- copy right -->
-        <article class="text-center py-3 px-1 md:pb-6">
-          <a href="#" class="font-extralight text-sm font-spartan"
+        <article class="px-1 py-3 text-center md:pb-6">
+          <a href="#" class="font-spartan text-sm font-extralight"
             >&copy 2023. @gaffOverflow - HTML TAILWIND Ecommerce Template</a
           >
         </article>
