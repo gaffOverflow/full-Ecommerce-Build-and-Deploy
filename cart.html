@@ -141,11 +141,13 @@
       <!-- cart table -->
 
       <main
-        class="md:px-18 gap-8 p-4 text-center font-spartan sm:p-10 md:flex-row lg:px-20 xl:px-32 2xl:px-52 overflow-x-scroll"
+        class="md:px-18 overflow-x-scroll p-4 text-center font-spartan sm:p-10 md:flex-row lg:px-20 xl:px-32 2xl:px-52"
       >
         <table class="w-full min-w-[700px]">
           <!-- table head -->
-          <thead class="lg:h-20 border-y border-slate-400 lg:text-xl font-bold h-12">
+          <thead
+            class="h-12 border-y border-slate-400 font-bold lg:h-20 lg:text-xl"
+          >
             <tr class="">
               <td>REMOVE</td>
               <td>IMAGES</td>
@@ -162,7 +164,11 @@
             <tr class="">
               <td>-</td>
               <td class="grid place-content-center">
-                <img src="./img/products/f1.jpg" alt="" class="lg:h-24 lg:w-24 lg:p-2 w-16 h-16 p-1" />
+                <img
+                  src="./img/products/f1.jpg"
+                  alt=""
+                  class="h-16 w-16 p-1 lg:h-24 lg:w-24 lg:p-2"
+                />
               </td>
               <td>Cartoon Astronaut T-Shirt</td>
               <td>$118.19</td>
@@ -172,17 +178,21 @@
                   name=""
                   id=""
                   value="1"
-                  class="w-16 rounded-[3px] border border-black px-3 py-1 lg:text-xl text-sm"
+                  class="w-16 rounded-[3px] border border-black px-3 py-1 text-sm lg:text-xl"
                 />
               </td>
               <td>$118.19</td>
             </tr>
 
             <!-- second row -->
-             <tr class="">
+            <tr class="">
               <td>-</td>
               <td class="grid place-content-center">
-                <img src="./img/products/f1.jpg" alt="" class="lg:h-24 lg:w-24 lg:p-2 w-16 h-16 p-1" />
+                <img
+                  src="./img/products/f1.jpg"
+                  alt=""
+                  class="h-16 w-16 p-1 lg:h-24 lg:w-24 lg:p-2"
+                />
               </td>
               <td>Cartoon Astronaut T-Shirt</td>
               <td>$118.19</td>
@@ -192,18 +202,21 @@
                   name=""
                   id=""
                   value="1"
-                  class="w-16 rounded-[3px] border border-black px-3 py-1 lg:text-xl text-sm"
+                  class="w-16 rounded-[3px] border border-black px-3 py-1 text-sm lg:text-xl"
                 />
               </td>
               <td>$118.19</td>
             </tr>
-
 
             <!-- third row -->
-              <tr class="">
+            <tr class="">
               <td>-</td>
               <td class="grid place-content-center">
-                <img src="./img/products/f1.jpg" alt="" class="lg:h-24 lg:w-24 lg:p-2 w-16 h-16 p-1" />
+                <img
+                  src="./img/products/f1.jpg"
+                  alt=""
+                  class="h-16 w-16 p-1 lg:h-24 lg:w-24 lg:p-2"
+                />
               </td>
               <td>Cartoon Astronaut T-Shirt</td>
               <td>$118.19</td>
@@ -213,22 +226,77 @@
                   name=""
                   id=""
                   value="1"
-                  class="w-16 rounded-[3px] border border-black px-3 py-1 lg:text-xl text-sm"
+                  class="w-16 rounded-[3px] border border-black px-3 py-1 text-sm lg:text-xl"
                 />
               </td>
               <td>$118.19</td>
             </tr>
-
           </tbody>
         </table>
       </main>
 
-      
+      <!-- Apply coupons & Cart Totals -->
+
+      <section
+        class="flex flex-col gap-4 p-4 font-spartan sm:p-10 md:flex-row md:px-16 lg:px-20 xl:px-32 2xl:px-52"
+      >
+        <!-- Apply Coupons -->
+        <section class="w-full">
+          <!-- Title header -->
+          <h1 class="pb-3 text-xl font-bold">Apply Coupons</h1>
+
+          <!-- Coupon form -->
+          <form action="" class="flex gap-3">
+            <!-- coupon input -->
+            <input
+              type="text"
+              name=""
+              id=""
+              placeholder="Enter Your Coupon"
+              class="w-2/3 rounded-sm border border-zinc-400 px-4 py-2"
+            />
+            <!-- coupon botton -->
+            <button class="rounded-md bg-linkHover px-4 py-2 text-background">
+              Apply
+            </button>
+          </form>
+        </section>
+
+        <!-- Table -->
+        <table class="w-full border border-zinc-500">
+          <thead class="border border-zinc-500">
+            <tr>
+              <th colspan="2" class="p-2 text-lg">Cart Totals</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="border border-zinc-500 p-2">Cart Subtotal</td>
+              <td class="border border-zinc-500 p-2">$ 321</td>
+            </tr>
+            <tr>
+              <td class="border border-zinc-500 p-2">Shipping</td>
+              <td class="border border-zinc-500 p-2">Free</td>
+            </tr>
+            <!-- table button -->
+            <tr>
+              <td class="p-2" colspan="2">
+                <button
+                  class="rounded-sm bg-linkHover px-2 py-1 text-background"
+                >
+                  Proceed to checkout
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
       <!-- footer -->
 
       <footer>
         <div
-          class="flex flex-col gap-4 p-4 font-spartan sm:flex-row lg:justify-center lg:px-14 xl:px-20 2xl:px-40"
+          class="flex flex-col gap-4 p-4 font-spartan sm:flex-row md:px-16 lg:justify-center lg:px-14 xl:px-20 2xl:px-40"
         >
           <!-- footer 1 -->
           <ul class="flex flex-col sm:basis-96 md:basis-auto lg:basis-[23rem]">
