@@ -109,7 +109,7 @@
         <div class="flex gap-3 lg:hidden">
           <a
             href="cart.html"
-            class=" grid place-content-center font-semibold text-linkHover transition hover:text-linkHover"
+            class="grid place-content-center font-semibold text-linkHover transition hover:text-linkHover"
             ><i class="fa-sharp fa-solid fa-cart-shopping"></i
           ></a>
           <button class="grid place-content-center" id="toggle">
@@ -138,6 +138,92 @@
         </p>
       </section>
 
+      <!-- cart table -->
+
+      <main
+        class="md:px-18 gap-8 p-4 text-center font-spartan sm:p-10 md:flex-row lg:px-20 xl:px-32 2xl:px-52 overflow-x-scroll"
+      >
+        <table class="w-full min-w-[700px]">
+          <!-- table head -->
+          <thead class="lg:h-20 border-y border-slate-400 lg:text-xl font-bold h-12">
+            <tr class="">
+              <td>REMOVE</td>
+              <td>IMAGES</td>
+              <td>PRODUCTS</td>
+              <td>PRICE</td>
+              <td>QUANTITY</td>
+              <td>SUBTOTAL</td>
+            </tr>
+          </thead>
+
+          <!-- table body -->
+          <tbody>
+            <!-- first row -->
+            <tr class="">
+              <td>-</td>
+              <td class="grid place-content-center">
+                <img src="./img/products/f1.jpg" alt="" class="lg:h-24 lg:w-24 lg:p-2 w-16 h-16 p-1" />
+              </td>
+              <td>Cartoon Astronaut T-Shirt</td>
+              <td>$118.19</td>
+              <td>
+                <input
+                  type="number"
+                  name=""
+                  id=""
+                  value="1"
+                  class="w-16 rounded-[3px] border border-black px-3 py-1 lg:text-xl text-sm"
+                />
+              </td>
+              <td>$118.19</td>
+            </tr>
+
+            <!-- second row -->
+             <tr class="">
+              <td>-</td>
+              <td class="grid place-content-center">
+                <img src="./img/products/f1.jpg" alt="" class="lg:h-24 lg:w-24 lg:p-2 w-16 h-16 p-1" />
+              </td>
+              <td>Cartoon Astronaut T-Shirt</td>
+              <td>$118.19</td>
+              <td>
+                <input
+                  type="number"
+                  name=""
+                  id=""
+                  value="1"
+                  class="w-16 rounded-[3px] border border-black px-3 py-1 lg:text-xl text-sm"
+                />
+              </td>
+              <td>$118.19</td>
+            </tr>
+
+
+            <!-- third row -->
+              <tr class="">
+              <td>-</td>
+              <td class="grid place-content-center">
+                <img src="./img/products/f1.jpg" alt="" class="lg:h-24 lg:w-24 lg:p-2 w-16 h-16 p-1" />
+              </td>
+              <td>Cartoon Astronaut T-Shirt</td>
+              <td>$118.19</td>
+              <td>
+                <input
+                  type="number"
+                  name=""
+                  id=""
+                  value="1"
+                  class="w-16 rounded-[3px] border border-black px-3 py-1 lg:text-xl text-sm"
+                />
+              </td>
+              <td>$118.19</td>
+            </tr>
+
+          </tbody>
+        </table>
+      </main>
+
+      
       <!-- footer -->
 
       <footer>
