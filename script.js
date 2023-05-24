@@ -46,3 +46,4 @@ smallImg.forEach((x) => {
     mainImg.src = x.src;
   });
 });
+
